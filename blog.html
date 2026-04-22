@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog — Personal Development Reflections — OurPath Guidance</title>
+<meta name="description" content="Reflections on personal development, reflective practice, and intentional growth.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+<nav id="nav">
+  <div class="container">
+    <a href="/" class="nav-logo"><img src="ourpath-horizontal-dark.png" alt="OurPath Guidance" style="height:32px;width:auto;display:block;"></a>
+    <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="/workshops">Workshops</a></li>
+      <li><a href="/journal">Journal</a></li>
+      <li><a href="/mentoring">Mentoring</a></li>
+      <li><a href="/our-story">Our Story</a></li>
+      <li><a href="/blog" class="active">Blog</a></li>
+      <li><a href="/contact">Contact</a></li>
+      <li><a href="/book" class="nav-cta">Book a Free Conversation &#8594;</a></li>
+    </ul>
+  </div>
+</nav>
+<section class="page-hero">
+  <div class="container"><div class="page-hero-content">
+    <div class="section-label">Blog</div>
+    <div class="hero-line"></div>
+    <h1>Reflections on growth,<br>clarity, and <em>development.</em></h1>
+    <p>Writing on personal development and reflective practice &#8212; the real questions beneath the surface of a managed life.</p>
+  </div></div>
+</section>
+
+<section style="padding:5rem 0;background:var(--cream);">
+  <div class="container">
+    <div class="blog-grid">
+      <div class="blog-card reveal"><div class="blog-date">Coming Soon</div><h3>The Difference Between Managing and Choosing</h3><p>Most adults are coping well. But coping and choosing are not the same thing. This piece explores the gap &#8212; and why structured reflection is the bridge.</p><span class="card-cta" style="opacity:.5;">Read soon &#8594;</span></div>
+      <div class="blog-card reveal reveal-delay-1"><div class="blog-date">Coming Soon</div><h3>What Kind of Work Does This Season Require?</h3><p>Not every moment calls for action. Some seasons require learning. Some require endurance. How do you know which one you&#8217;re in?</p><span class="card-cta" style="opacity:.5;">Read soon &#8594;</span></div>
+      <div class="blog-card reveal reveal-delay-2"><div class="blog-date">Coming Soon</div><h3>The Cost Audit: Naming What You Carry</h3><p>Every commitment has a cost &#8212; visible, hidden, and deferred. Most of us have never stopped to ask whether we&#8217;d agree to what we&#8217;re paying.</p><span class="card-cta" style="opacity:.5;">Read soon &#8594;</span></div>
+      <div class="blog-card reveal reveal-delay-3"><div class="blog-date">Coming Soon</div><h3>Islamic Scholarship and Modern Developmental Guidance</h3><p>How classical Islamic psychospiritual tradition informs the OurPath framework &#8212; and why the conversation matters.</p><span class="card-cta" style="opacity:.5;">Read soon &#8594;</span></div>
+    </div>
+    <div style="text-align:center;margin-top:3rem;" class="reveal">
+      <p style="color:var(--subtle);font-style:italic;font-size:.95rem;">New reflections coming. Leave your email to be notified.</p>
+      <form name="blog-notify" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="notify-form" style="margin:1.5rem auto 0;justify-content:center;" onsubmit="return handleNotify(event, this)">
+        <input type="hidden" name="form-name" value="blog-notify"><p style="display:none"><label>Don&#8217;t fill this out: <input name="bot-field"></label></p>
+        <input type="email" name="email" required placeholder="Your email address"><button type="submit">Notify Me</button>
+      </form>
+      <div class="form-success" id="blog-notify-success" style="margin-top:1rem;max-width:400px;margin-left:auto;margin-right:auto;"><div class="success-tick">&#10003;</div><p>You&#8217;re on the list.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <div class="container">
+    <div class="section-label" style="text-align:center;">Start Your Development</div>
+    <h2>Want to start your development now?</h2>
+    <p>Don&#8217;t wait for the blog. Start with a conversation.</p>
+    <div class="cta-buttons">
+      <a href="/book" class="btn-primary">Book a Free Conversation &#8594;</a>
+      <a href="/mentoring" class="btn-secondary">Explore Mentoring</a>
+    </div>
+  </div>
+</div>
+<div class="floating-cta" id="floatingCta">
+  <div class="container">
+    <div class="floating-cta-text"><strong>OurPath</strong> &#8212; Personal development through guidance &amp; mentoring</div>
+    <a href="/book" class="hero-cta">Book a Free Conversation &#8594;</a>
+  </div>
+</div>
+<footer>
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <div class="nav-logo"><img src="ourpath-horizontal-dark.png" alt="OurPath Guidance" style="height:36px;width:auto;display:block;margin-bottom:.5rem;"></div>
+        <p>Personal development through guidance and mentoring. Reflective practice rooted in tradition, designed for modern life.</p>
+      </div>
+      <div class="footer-links"><h4>Navigate</h4><ul><li><a href="/#approach">Our Approach</a></li><li><a href="/workshops">Workshops</a></li><li><a href="/journal">Journal</a></li><li><a href="/mentoring">Mentoring</a></li><li><a href="/our-story">Our Story</a></li><li><a href="/blog">Blog</a></li><li><a href="/contact">Contact</a></li></ul></div>
+      <div class="footer-links"><h4>Get Started</h4><ul><li><a href="/book">Book a Conversation</a></li><li><a href="/referral">Referral Form</a></li></ul></div>
+      <div class="footer-links"><h4>Connect</h4><ul><li><a href="#">Instagram</a></li><li><a href="#">LinkedIn</a></li><li><a href="#">TikTok</a></li><li><a href="/contact">Email</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 OurPath Guidance Ltd. All rights reserved.</p><p>London, UK</p></div>
+  </div>
+</footer>
+<script>
+const reveals=document.querySelectorAll('.reveal');
+const observer=new IntersectionObserver(e=>{e.forEach(t=>{if(t.isIntersecting)t.target.classList.add('visible')})},{threshold:.1,rootMargin:'0px 0px -50px 0px'});
+reveals.forEach(el=>observer.observe(el));
+window.addEventListener('scroll',()=>{
+  document.getElementById('nav').classList.toggle('scrolled',window.scrollY>60);
+  const fc=document.getElementById('floatingCta');
+  fc.classList.toggle('visible',window.scrollY>400&&window.innerHeight+window.scrollY<document.body.offsetHeight-400);
+});
+document.querySelectorAll('.nav-links a').forEach(l=>{l.addEventListener('click',()=>document.querySelector('.nav-links').classList.remove('open'))});
+
+function handleNotify(e, form) {
+  e.preventDefault();
+  const data = new URLSearchParams(new FormData(form));
+  fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: data.toString() })
+    .then(() => { form.style.display = 'none'; document.getElementById('blog-notify-success').classList.add('show'); })
+    .catch(() => { alert('Something went wrong. Please try again.'); });
+  return false;
+}
+</script>
+</body>
+</html>

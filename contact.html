@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — OurPath Guidance</title>
+<meta name="description" content="Get in touch with OurPath Guidance. Questions, enquiries, or just something you want to say.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+<nav id="nav">
+  <div class="container">
+    <a href="/" class="nav-logo"><img src="ourpath-horizontal-dark.png" alt="OurPath Guidance" style="height:32px;width:auto;display:block;"></a>
+    <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="/workshops">Workshops</a></li>
+      <li><a href="/journal">Journal</a></li>
+      <li><a href="/mentoring">Mentoring</a></li>
+      <li><a href="/our-story">Our Story</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/contact" class="active">Contact</a></li>
+      <li><a href="/book" class="nav-cta">Book a Free Conversation &#8594;</a></li>
+    </ul>
+  </div>
+</nav>
+<section class="contact" style="min-height:100vh;display:flex;align-items:center;padding-top:8rem;">
+  <div class="container">
+    <div class="section-label reveal" style="text-align:center;color:rgba(196,153,60,.7);">Get in Touch</div>
+    <h2 class="reveal">We&#8217;d like to hear from you.</h2>
+    <p class="contact-subtitle reveal">A question, an enquiry, or just something you want to say &#8212; this is the place.</p>
+    <div class="contact-form-wrap reveal dark-form">
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="ourpath-form" onsubmit="return handleForm(event, this)">
+        <input type="hidden" name="form-name" value="contact"><p style="display:none"><label>Don&#8217;t fill this out: <input name="bot-field"></label></p>
+        <div class="form-row"><div><label for="c-name">Name</label><input type="text" id="c-name" name="name" required placeholder="Your name"></div><div><label for="c-email">Email</label><input type="email" id="c-email" name="email" required placeholder="Your email"></div></div>
+        <div><label for="c-subject">Subject</label><select id="c-subject" name="subject" required><option value="" disabled selected>What is this about?</option><option value="General enquiry">General enquiry</option><option value="Workshop enquiry">Workshop enquiry</option><option value="1-1 mentoring">1-1 mentoring</option><option value="Collaboration">Collaboration or partnership</option><option value="Other">Other</option></select></div>
+        <div><label for="c-message">Message</label><textarea id="c-message" name="message" rows="5" required placeholder="What would you like to say?"></textarea></div>
+        <button type="submit" class="form-submit">Send Message &#8594;</button>
+      </form>
+      <div class="form-success" id="contact-success"><div class="success-tick">&#10003;</div><p>Thank you. We&#8217;ll respond as soon as we can.</p></div>
+    </div>
+    <div style="text-align:center;margin-top:3rem;"><p style="color:var(--subtle);font-size:.88rem;">Or email us directly at <a href="mailto:hello@ourpathguidance.co.uk" style="color:var(--gold);">hello@ourpathguidance.co.uk</a></p></div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <div class="container">
+    <div class="section-label" style="text-align:center;">Start Your Development</div>
+    <h2>Ready to begin?</h2>
+    <p>Book a free 20-minute conversation to explore whether OurPath is right for you.</p>
+    <div class="cta-buttons">
+      <a href="/book" class="btn-primary">Book a Free Conversation &#8594;</a>
+      <a href="/mentoring" class="btn-secondary">Explore Mentoring</a>
+    </div>
+  </div>
+</div>
+<div class="floating-cta" id="floatingCta">
+  <div class="container">
+    <div class="floating-cta-text"><strong>OurPath</strong> &#8212; Personal development through guidance &amp; mentoring</div>
+    <a href="/book" class="hero-cta">Book a Free Conversation &#8594;</a>
+  </div>
+</div>
+<footer>
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <div class="nav-logo"><img src="ourpath-horizontal-dark.png" alt="OurPath Guidance" style="height:36px;width:auto;display:block;margin-bottom:.5rem;"></div>
+        <p>Personal development through guidance and mentoring. Reflective practice rooted in tradition, designed for modern life.</p>
+      </div>
+      <div class="footer-links"><h4>Navigate</h4><ul><li><a href="/#approach">Our Approach</a></li><li><a href="/workshops">Workshops</a></li><li><a href="/journal">Journal</a></li><li><a href="/mentoring">Mentoring</a></li><li><a href="/our-story">Our Story</a></li><li><a href="/blog">Blog</a></li><li><a href="/contact">Contact</a></li></ul></div>
+      <div class="footer-links"><h4>Get Started</h4><ul><li><a href="/book">Book a Conversation</a></li><li><a href="/referral">Referral Form</a></li></ul></div>
+      <div class="footer-links"><h4>Connect</h4><ul><li><a href="#">Instagram</a></li><li><a href="#">LinkedIn</a></li><li><a href="#">TikTok</a></li><li><a href="/contact">Email</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 OurPath Guidance Ltd. All rights reserved.</p><p>London, UK</p></div>
+  </div>
+</footer>
+<script>
+const reveals=document.querySelectorAll('.reveal');
+const observer=new IntersectionObserver(e=>{e.forEach(t=>{if(t.isIntersecting)t.target.classList.add('visible')})},{threshold:.1,rootMargin:'0px 0px -50px 0px'});
+reveals.forEach(el=>observer.observe(el));
+window.addEventListener('scroll',()=>{
+  document.getElementById('nav').classList.toggle('scrolled',window.scrollY>60);
+  const fc=document.getElementById('floatingCta');
+  fc.classList.toggle('visible',window.scrollY>400&&window.innerHeight+window.scrollY<document.body.offsetHeight-400);
+});
+document.querySelectorAll('.nav-links a').forEach(l=>{l.addEventListener('click',()=>document.querySelector('.nav-links').classList.remove('open'))});
+
+function handleForm(e, form) {
+  e.preventDefault();
+  const data = new URLSearchParams(new FormData(form));
+  fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: data.toString() })
+    .then(() => { form.style.display = 'none'; document.getElementById('contact-success').classList.add('show'); })
+    .catch(() => { alert('Something went wrong. Please try again.'); });
+  return false;
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+[build]
+  publish = "."
+
+# Pretty URLs — serve .html files without extension
+[[redirects]]
+  from = "/workshops"
+  to = "/workshops.html"
+  status = 200
+
+[[redirects]]
+  from = "/journal"
+  to = "/journal.html"
+  status = 200
+
+[[redirects]]
+  from = "/mentoring"
+  to = "/mentoring.html"
+  status = 200
+
+[[redirects]]
+  from = "/book"
+  to = "/book.html"
+  status = 200
+
+[[redirects]]
+  from = "/referral"
+  to = "/referral.html"
+  status = 200
+
+[[redirects]]
+  from = "/blog"
+  to = "/blog.html"
+  status = 200
+
+[[redirects]]
+  from = "/contact"
+  to = "/contact.html"
+  status = 200
+
+[[redirects]]
+  from = "/our-story"
+  to = "/our-story.html"
+  status = 200
+
+# Headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"

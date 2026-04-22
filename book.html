@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book — Start Your Personal Development — OurPath Guidance</title>
+<meta name="description" content="Start your personal development journey. Book a free conversation or choose a mentoring package.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+.booking-options{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-bottom:4rem}
+@media(max-width:768px){.booking-options{grid-template-columns:1fr}}
+.booking-option{background:var(--white);border:1px solid var(--line);padding:2.5rem 2rem;transition:box-shadow .4s,transform .3s}
+.booking-option:hover{box-shadow:0 8px 40px rgba(0,0,0,.06);transform:translateY(-3px)}
+.booking-option .card-label{font-family:var(--sans);font-size:.7rem;letter-spacing:.2em;color:var(--gold);text-transform:uppercase;font-weight:500;margin-bottom:1rem}
+.booking-option h3{margin-bottom:.5rem}
+.booking-option p{color:var(--subtle);font-size:.9rem}
+.booking-option .price-tag{font-family:var(--serif);font-size:1.6rem;color:var(--dark);font-weight:600;margin:1rem 0 .5rem}
+.calendly-embed-wrap{min-height:700px;border:1px solid var(--line);background:var(--white)}
+.payment-note{text-align:center;margin-top:2rem;padding:1.5rem;background:var(--cream-dark);border:1px solid var(--line);max-width:600px;margin-left:auto;margin-right:auto}
+.payment-note p{color:var(--subtle);font-size:.88rem;margin:0}
+.payment-note strong{color:var(--dark)}
+</style>
+</head>
+<body>
+<nav id="nav">
+  <div class="container">
+    <a href="/" class="nav-logo"><img src="ourpath-horizontal-dark.png" alt="OurPath Guidance" style="height:32px;width:auto;display:block;"></a>
+    <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="/workshops">Workshops</a></li>
+      <li><a href="/journal">Journal</a></li>
+      <li><a href="/mentoring">Mentoring</a></li>
+      <li><a href="/our-story">Our Story</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/contact">Contact</a></li>
+      <li><a href="/book" class="nav-cta active">Book a Free Conversation &#8594;</a></li>
+    </ul>
+  </div>
+</nav>
+<section class="page-hero">
+  <div class="container"><div class="page-hero-content">
+    <div class="section-label">Start Your Development</div>
+    <div class="hero-line"></div>
+    <h1>Your personal development<br>starts <em>here.</em></h1>
+    <p>A free conversation or a mentoring package &#8212; two clear paths, one framework for growth.</p>
+  </div></div>
+</section>
+
+<section style="padding:5rem 0;background:var(--cream);">
+  <div class="container">
+    <div class="section-label reveal" style="text-align:center;">Two Ways to Begin</div>
+    <h2 class="reveal" style="text-align:center;font-style:italic;margin-bottom:3rem;">Choose your starting point.</h2>
+    <div class="booking-options">
+      <div class="booking-option reveal reveal-delay-1">
+        <div class="card-label">Free</div>
+        <h3>Screening Conversation</h3>
+        <div class="price-tag">Free</div>
+        <p>A 20-minute call to explore whether OurPath is the right fit for your development. No obligation.</p>
+        <a href="#calendly" class="hero-cta" style="display:inline-block;margin-top:1.5rem;font-size:.82rem;">Schedule Now &#8594;</a>
+      </div>
+      <div class="booking-option reveal reveal-delay-2">
+        <div class="card-label">Paid Sessions</div>
+        <h3>Mentoring Package</h3>
+        <div class="price-tag">From &pound;120</div>
+        <p>Book and pay for your sessions in blocks of 4, 8, or 12. &pound;30 per session. Schedule dates after payment.</p>
+        <a href="#pay" class="hero-cta" style="display:inline-block;margin-top:1.5rem;font-size:.82rem;">View Packages &#8594;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="calendly-section" id="calendly">
+  <div class="container">
+    <div class="section-label reveal" style="text-align:center;">Schedule</div>
+    <h2 class="reveal">Book your free conversation.</h2>
+    <p class="reveal" style="text-align:center;color:var(--subtle);max-width:540px;margin:0 auto 2rem;">Choose a time. 20 minutes, no payment required.</p>
+    <div class="calendly-embed-wrap reveal">
+      <div class="calendly-inline-widget" data-url="https://calendly.com/hello-ourpathguidance/screening-conversation?hide_gdpr_banner=1&primary_color=c4993c" style="min-width:320px;height:700px;"></div>
+      <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    </div>
+  </div>
+</section>
+
+<section class="pricing-section" id="pay">
+  <div class="container">
+    <div class="section-label" style="text-align:center;">Pay &amp; Book</div>
+    <h2 class="reveal" style="text-align:center;">Choose your package.</h2>
+    <p class="pricing-subtitle reveal">Secure payment via Stripe. After payment, you receive a link to schedule your sessions.</p>
+    <div class="pricing-grid pricing-grid-4">
+      <div class="pricing-card reveal"><div class="card-label">Try It</div><h3>Single Session</h3><div class="price">&pound;30</div><div class="price-note">One-off session</div><ul><li>1 structured session</li><li>50&#8211;60 minutes</li><li>Online or in-person</li></ul><a href="https://buy.stripe.com/28E14oblS7eK0E5f69dwc03" class="hero-cta" style="display:block;text-align:center;font-size:.82rem;" target="_blank" rel="noopener">Pay &amp; Book &#8594;</a></div>
+      <div class="pricing-card reveal reveal-delay-1"><div class="card-label">Starter</div><h3>4 Sessions</h3><div class="price">&pound;120</div><div class="price-note">&pound;30 per session</div><ul><li>4 structured sessions</li><li>Session Zero included</li><li>Online or in-person</li></ul><a href="https://buy.stripe.com/bJe7sM89Gbv00E51fjdwc00" class="hero-cta" style="display:block;text-align:center;font-size:.82rem;" target="_blank" rel="noopener">Pay &amp; Book &#8594;</a></div>
+      <div class="pricing-card featured reveal reveal-delay-2"><div class="card-label">Standard</div><h3>8 Sessions</h3><div class="price">&pound;240</div><div class="price-note">&pound;30 per session</div><ul><li>8 structured sessions</li><li>Session Zero included</li><li>Mid-point review</li></ul><a href="https://buy.stripe.com/cNiaEYcpW6aG9aB7DHdwc01" class="hero-cta" style="display:block;text-align:center;font-size:.82rem;" target="_blank" rel="noopener">Pay &amp; Book &#8594;</a></div>
+      <div class="pricing-card reveal reveal-delay-3"><div class="card-label">Comprehensive</div><h3>12 Sessions</h3><div class="price">&pound;360</div><div class="price-note">&pound;30 per session</div><ul><li>12 structured sessions</li><li>Mid-point &amp; final reviews</li><li>Orientation Statement</li></ul><a href="https://buy.stripe.com/bJeeVe1Licz4fyZe25dwc02" class="hero-cta" style="display:block;text-align:center;font-size:.82rem;" target="_blank" rel="noopener">Pay &amp; Book &#8594;</a></div>
+    </div>
+    <div class="payment-note reveal"><p><strong>How it works:</strong> After payment, you receive a confirmation email with a link to schedule your sessions via Calendly. Book weekly or fortnightly.</p></div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <div class="container">
+    <div class="section-label" style="text-align:center;">Start Your Development</div>
+    <h2>Not sure where to start?</h2>
+    <p>Start with a free 20-minute conversation. No commitment.</p>
+    <div class="cta-buttons">
+      <a href="/book" class="btn-primary">Book a Free Conversation &#8594;</a>
+      <a href="/referral" class="btn-secondary">Submit a Referral Instead</a>
+    </div>
+  </div>
+</div>
+<div class="floating-cta" id="floatingCta">
+  <div class="container">
+    <div class="floating-cta-text"><strong>OurPath</strong> &#8212; Personal development through guidance &amp; mentoring</div>
+    <a href="/book" class="hero-cta">Book a Free Conversation &#8594;</a>
+  </div>
+</div>
+<footer>
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <div class="nav-logo"><img src="ourpath-horizontal-dark.png" alt="OurPath Guidance" style="height:36px;width:auto;display:block;margin-bottom:.5rem;"></div>
+        <p>Personal development through guidance and mentoring. Reflective practice rooted in tradition, designed for modern life.</p>
+      </div>
+      <div class="footer-links"><h4>Navigate</h4><ul><li><a href="/#approach">Our Approach</a></li><li><a href="/workshops">Workshops</a></li><li><a href="/journal">Journal</a></li><li><a href="/mentoring">Mentoring</a></li><li><a href="/our-story">Our Story</a></li><li><a href="/blog">Blog</a></li><li><a href="/contact">Contact</a></li></ul></div>
+      <div class="footer-links"><h4>Get Started</h4><ul><li><a href="/book">Book a Conversation</a></li><li><a href="/referral">Referral Form</a></li></ul></div>
+      <div class="footer-links"><h4>Connect</h4><ul><li><a href="#">Instagram</a></li><li><a href="#">LinkedIn</a></li><li><a href="#">TikTok</a></li><li><a href="/contact">Email</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 OurPath Guidance Ltd. All rights reserved.</p><p>London, UK</p></div>
+  </div>
+</footer>
+<script>
+const reveals=document.querySelectorAll('.reveal');
+const observer=new IntersectionObserver(e=>{e.forEach(t=>{if(t.isIntersecting)t.target.classList.add('visible')})},{threshold:.1,rootMargin:'0px 0px -50px 0px'});
+reveals.forEach(el=>observer.observe(el));
+window.addEventListener('scroll',()=>{
+  document.getElementById('nav').classList.toggle('scrolled',window.scrollY>60);
+  const fc=document.getElementById('floatingCta');
+  fc.classList.toggle('visible',window.scrollY>400&&window.innerHeight+window.scrollY<document.body.offsetHeight-400);
+});
+document.querySelectorAll('.nav-links a').forEach(l=>{l.addEventListener('click',()=>document.querySelector('.nav-links').classList.remove('open'))});
+
+</script>
+</body>
+</html>

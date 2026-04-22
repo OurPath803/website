@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OurPath — Personal Development Through Guidance &amp; Mentoring</title>
+<meta name="description" content="OurPath is a personal development service built around structured reflective practice. 1-1 mentoring and guided workshops helping young adults develop clarity, take ownership, and grow with intention.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+.illus-container{display:flex;align-items:center;justify-content:center;min-height:320px;position:relative;overflow:hidden;border-radius:12px}
+.illus-container.warm{background:linear-gradient(135deg,#F7F3EE 0%,#EDE8E0 100%)}
+.illus-container.dark{background:linear-gradient(135deg,#1A2F36 0%,#1E3640 100%)}
+.illus-container svg{width:100%;max-width:360px;height:auto}
+@media(max-width:768px){.illus-container{min-height:240px}.illus-container svg{max-width:280px}}
+.scene-label{position:absolute;bottom:1rem;left:50%;transform:translateX(-50%);font-family:var(--sans);font-size:.68rem;letter-spacing:.15em;color:var(--gold);text-transform:uppercase;font-weight:500;opacity:.5;white-space:nowrap}
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <div class="container">
+    <a href="/" class="nav-logo"><img src="ourpath-horizontal-dark.png" alt="OurPath Guidance" style="height:32px;width:auto;display:block;"></a>
+    <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="/workshops">Workshops</a></li>
+      <li><a href="/journal">Journal</a></li>
+      <li><a href="/mentoring">Mentoring</a></li>
+      <li><a href="/our-story">Our Story</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/contact">Contact</a></li>
+      <li><a href="/book" class="nav-cta">Book a Free Conversation &#8594;</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- 1. HOOK -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-split">
+      <div class="hero-content">
+        <div class="section-label">Personal Development Through Guidance &amp; Mentoring</div>
+        <h1>You're managing everything.<br>But are you <em>growing?</em></h1>
+        <div class="hero-line"></div>
+        <p>OurPath helps young adults develop through structured reflective practice. Not therapy. Not coaching. A guided framework for seeing where you stand, owning what you carry, and choosing your direction.</p>
+        <div class="hero-cta-group">
+          <a href="/book" class="hero-cta-filled">Book a Free Conversation &#8594;</a>
+          <a href="#reel" class="hero-cta">See How It Works &#8594;</a>
+        </div>
+      </div>
+      <div class="hero-compass">
+        <svg viewBox="0 0 300 280" fill="none">
+          <circle cx="150" cy="140" r="120" fill="#C4993C" opacity=".06"/>
+          <rect x="80" y="175" width="140" height="6" rx="3" fill="#C4993C" opacity=".3"/>
+          <rect x="95" y="181" width="4" height="40" rx="2" fill="#C4993C" opacity=".2"/>
+          <rect x="201" y="181" width="4" height="40" rx="2" fill="#C4993C" opacity=".2"/>
+          <ellipse cx="115" cy="160" rx="18" ry="22" fill="#2A4A54" opacity=".8"/>
+          <circle cx="115" cy="125" r="16" fill="#D4A574" opacity=".9"/>
+          <path d="M 105 132 Q 115 142, 125 132" stroke="#8B6B4E" stroke-width="1" fill="none" opacity=".4"/>
+          <path d="M 99 120 Q 100 108, 115 106 Q 130 108, 131 120" fill="#1A2F36" opacity=".7"/>
+          <circle cx="110" cy="124" r="1.5" fill="#1A2F36" opacity=".6"/>
+          <circle cx="120" cy="124" r="1.5" fill="#1A2F36" opacity=".6"/>
+          <path d="M 110 130 Q 115 134, 120 130" stroke="#8B6B4E" stroke-width="1" fill="none" opacity=".5"/>
+          <path d="M 97 150 Q 85 155, 80 145" stroke="#D4A574" stroke-width="4" fill="none" stroke-linecap="round" opacity=".8"/>
+          <path d="M 133 150 Q 140 148, 145 152" stroke="#D4A574" stroke-width="4" fill="none" stroke-linecap="round" opacity=".8"/>
+          <ellipse cx="185" cy="160" rx="18" ry="22" fill="#3B6B7A" opacity=".7"/>
+          <circle cx="185" cy="125" r="15" fill="#C4946A" opacity=".9"/>
+          <path d="M 170 120 Q 172 105, 185 103 Q 198 105, 200 120" fill="#2A3F46" opacity=".6"/>
+          <circle cx="180" cy="123" r="1.5" fill="#1A2F36" opacity=".6"/>
+          <circle cx="190" cy="123" r="1.5" fill="#1A2F36" opacity=".6"/>
+          <path d="M 181 130 Q 185 132, 189 130" stroke="#8B6B4E" stroke-width="1" fill="none" opacity=".4"/>
+          <path d="M 203 155 Q 206 142, 196 132" stroke="#C4946A" stroke-width="4" fill="none" stroke-linecap="round" opacity=".8"/>
+          <rect x="140" y="168" width="20" height="14" rx="1" fill="#F7F3EE" opacity=".7" transform="rotate(-5, 150, 175)"/>
+          <line x1="144" y1="173" x2="156" y2="172" stroke="#C4993C" stroke-width="0.5" opacity=".4"/>
+          <line x1="144" y1="176" x2="154" y2="175" stroke="#C4993C" stroke-width="0.5" opacity=".4"/>
+          <rect x="120" y="166" width="10" height="12" rx="2" fill="#EDE8E0" opacity=".6"/>
+          <path d="M 123 164 Q 125 158, 123 152" stroke="#C4993C" stroke-width="0.5" opacity=".3"/>
+          <path d="M 130 140 Q 150 130, 170 140" stroke="#C4993C" stroke-width="1" opacity=".15" stroke-dasharray="4 4"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. REEL A: Overwhelmed -->
+<section class="visual-section cream" id="reel">
+  <div class="container">
+    <div class="visual-grid">
+      <div class="visual-text reveal">
+        <div class="section-label">Where Most People Are</div>
+        <h2>Energy goes everywhere. Growth goes nowhere.</h2>
+        <p>You're putting effort into work, family, faith, health, ambitions &#8212; all at once. Without structure, energy scatters. Nothing gets the depth it needs.</p>
+      </div>
+      <div class="illus-container dark reveal reveal-delay-1">
+        <svg viewBox="0 0 320 280" fill="none">
+          <ellipse cx="160" cy="178" rx="22" ry="25" fill="#3B6B7A" opacity=".7"/>
+          <circle cx="160" cy="138" r="18" fill="#D4A574" opacity=".9"/>
+          <path d="M 142 132 Q 145 116, 160 114 Q 175 116, 178 132" fill="#2A3F46" opacity=".5"/>
+          <circle cx="154" cy="137" r="1.5" fill="#1A2F36" opacity=".6"/>
+          <circle cx="166" cy="137" r="1.5" fill="#1A2F36" opacity=".6"/>
+          <line x1="151" y1="132" x2="157" y2="133" stroke="#8B6B4E" stroke-width="1" opacity=".5"/>
+          <line x1="163" y1="133" x2="169" y2="132" stroke="#8B6B4E" stroke-width="1" opacity=".5"/>
+          <path d="M 155 145 Q 160 143, 165 145" stroke="#8B6B4E" stroke-width="1" fill="none" opacity=".4"/>
+          <path d="M 138 162 Q 128 148, 143 128" stroke="#D4A574" stroke-width="5" fill="none" stroke-linecap="round" opacity=".7"/>
+          <path d="M 182 162 Q 192 148, 177 128" stroke="#D4A574" stroke-width="5" fill="none" stroke-linecap="round" opacity=".7"/>
+          <circle cx="70" cy="60" r="28" stroke="#C4993C" stroke-width="1" fill="#C4993C" opacity=".08"/><text dominant-baseline="central" x="70" y="63" text-anchor="middle" fill="#C4993C" font-family="DM Sans" font-size="9" letter-spacing="1" opacity=".6">WORK</text>
+          <circle cx="250" cy="50" r="26" stroke="#C4993C" stroke-width="1" fill="#C4993C" opacity=".08"/><text dominant-baseline="central" x="250" y="53" text-anchor="middle" fill="#C4993C" font-family="DM Sans" font-size="9" letter-spacing="1" opacity=".6">FAITH</text>
+          <circle cx="55" cy="150" r="24" stroke="#C4993C" stroke-width="1" fill="#C4993C" opacity=".08"/><text dominant-baseline="central" x="55" y="153" text-anchor="middle" fill="#C4993C" font-family="DM Sans" font-size="9" letter-spacing="1" opacity=".6">FAMILY</text>
+          <circle cx="265" cy="140" r="25" stroke="#C4993C" stroke-width="1" fill="#C4993C" opacity=".08"/><text dominant-baseline="central" x="265" y="143" text-anchor="middle" fill="#C4993C" font-family="DM Sans" font-size="9" letter-spacing="1" opacity=".6">HEALTH</text>
+          <circle cx="160" cy="40" r="24" stroke="#C4993C" stroke-width="1" fill="#C4993C" opacity=".08"/><text dominant-baseline="central" x="160" y="43" text-anchor="middle" fill="#C4993C" font-family="DM Sans" font-size="9" letter-spacing="1" opacity=".6">AMBITION</text>
+          <line x1="145" y1="125" x2="90" y2="78" stroke="#C4993C" stroke-width="0.75" opacity=".2" stroke-dasharray="4 3"/>
+          <line x1="175" y1="125" x2="230" y2="68" stroke="#C4993C" stroke-width="0.75" opacity=".2" stroke-dasharray="4 3"/>
+          <line x1="138" y1="160" x2="79" y2="150" stroke="#C4993C" stroke-width="0.75" opacity=".2" stroke-dasharray="4 3"/>
+          <line x1="182" y1="160" x2="240" y2="140" stroke="#C4993C" stroke-width="0.75" opacity=".2" stroke-dasharray="4 3"/>
+          <line x1="160" y1="120" x2="160" y2="64" stroke="#C4993C" stroke-width="0.75" opacity=".2" stroke-dasharray="4 3"/>
+        </svg>
+        <span class="scene-label">Replace with your photo</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REEL B: Centred -->
+<section class="visual-section white">
+  <div class="container">
+    <div class="visual-grid reverse">
+      <div class="visual-text reveal">
+        <div class="section-label">What Reflective Practice Changes</div>
+        <h2>Same life. Routed through reflection.</h2>
+        <p>The demands don't disappear. But they stop competing. Structured reflective practice gives you a centre to route decisions through &#8212; so each part of your life gets the right attention.</p>
+      </div>
+      <div class="illus-container warm reveal reveal-delay-1">
+        <svg viewBox="0 0 320 280" fill="none">
+          <rect x="60" y="195" width="200" height="6" rx="3" fill="#C4993C" opacity=".25"/>
+          <ellipse cx="160" cy="178" rx="22" ry="25" fill="#2A4A54" opacity=".8"/>
+          <circle cx="160" cy="138" r="18" fill="#D4A574" opacity=".9"/>
+          <path d="M 142 132 Q 145 118, 160 116 Q 175 118, 178 132" fill="#1A2F36" opacity=".6"/>
+          <path d="M 153 138 Q 155 140, 157 138" stroke="#1A2F36" stroke-width="1" fill="none" opacity=".5"/>
+          <path d="M 163 138 Q 165 140, 167 138" stroke="#1A2F36" stroke-width="1" fill="none" opacity=".5"/>
+          <path d="M 155 145 Q 160 148, 165 145" stroke="#8B6B4E" stroke-width="1" fill="none" opacity=".5"/>
+          <path d="M 180 162 Q 190 172, 185 182" stroke="#D4A574" stroke-width="5" fill="none" stroke-linecap="round" opacity=".8"/>
+          <path d="M 140 165 Q 125 178, 120 192" stroke="#D4A574" stroke-width="5" fill="none" stroke-linecap="round" opacity=".7"/>
+          <rect x="170" y="180" width="50" height="35" rx="2" fill="#F7F3EE" stroke="#C4993C" stroke-width="0.75" opacity=".8" transform="rotate(-3, 195, 198)"/>
+          <line x1="178" y1="190" x2="212" y2="189" stroke="#C4993C" stroke-width="0.5" opacity=".3"/>
+          <line x1="178" y1="195" x2="210" y2="194" stroke="#C4993C" stroke-width="0.5" opacity=".3"/>
+          <line x1="178" y1="200" x2="208" y2="199" stroke="#C4993C" stroke-width="0.5" opacity=".3"/>
+          <circle cx="160" cy="100" r="22" stroke="#C4993C" stroke-width="1" opacity=".3"/>
+          <text dominant-baseline="central" x="160" y="100" text-anchor="middle" fill="#C4993C" font-family="DM Sans" font-size="6" letter-spacing="2" font-weight="500" opacity=".5">REFLECTION</text>
+          <line x1="160" y1="78" x2="160" y2="56" stroke="#C4993C" stroke-width="0.75" opacity=".25"/>
+          <line x1="139" y1="92" x2="86" y2="68" stroke="#C4993C" stroke-width="0.75" opacity=".25"/>
+          <line x1="181" y1="92" x2="239" y2="68" stroke="#C4993C" stroke-width="0.75" opacity=".25"/>
+          <circle cx="160" cy="50" r="6" fill="#C4993C" opacity=".1"/><text dominant-baseline="central" x="160" y="53" text-anchor="middle" fill="#1A2F36" font-family="DM Sans" font-size="6" opacity=".4">WORK</text>
+          <circle cx="80" cy="65" r="6" fill="#C4993C" opacity=".1"/><text dominant-baseline="central" x="80" y="68" text-anchor="middle" fill="#1A2F36" font-family="DM Sans" font-size="6" opacity=".4">FAMILY</text>
+          <circle cx="245" cy="65" r="6" fill="#C4993C" opacity=".1"/><text dominant-baseline="central" x="245" y="68" text-anchor="middle" fill="#1A2F36" font-family="DM Sans" font-size="6" opacity=".4">FAITH</text>
+        </svg>
+        <span class="scene-label">Replace with your photo</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Three pillars -->
+<section class="trio-section dark" id="approach">
+  <div class="container">
+    <div class="section-label" style="text-align:center;">Our Approach</div>
+    <h2 class="reveal">Three commitments. One framework.</h2>
+    <p class="trio-subtitle reveal">Not therapy. Not coaching. A structured approach to personal development informed by Islamic scholarship.</p>
+    <div class="trio-grid">
+      <div class="trio-dark-card reveal reveal-delay-1">
+        <div class="trio-icon"><svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="30" r="10" fill="#D4A574" opacity=".7"/><rect x="28" y="38" width="24" height="18" rx="4" fill="#2A4A54" opacity=".6"/><line x1="52" y1="40" x2="52" y2="30" stroke="#D4A574" stroke-width="3" opacity=".6" stroke-linecap="round"/><rect x="52" y="20" width="20" height="20" rx="2" stroke="#C4993C" stroke-width="1.5" fill="none" opacity=".6"/><circle cx="62" cy="30" r="3" fill="#C4993C" opacity=".3"/></svg></div>
+        <h3>Clarity</h3>
+        <p>See where you actually stand. Map your roles, distinguish what you chose from what you inherited.</p>
+      </div>
+      <div class="trio-dark-card reveal reveal-delay-2">
+        <div class="trio-icon"><svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="28" r="10" fill="#D4A574" opacity=".7"/><rect x="28" y="36" width="24" height="18" rx="4" fill="#2A4A54" opacity=".6"/><path d="M 30 42 Q 26 43, 22 44" stroke="#D4A574" stroke-width="3" opacity=".6" stroke-linecap="round" fill="none"/><path d="M 50 42 Q 54 43, 58 44" stroke="#D4A574" stroke-width="3" opacity=".6" stroke-linecap="round" fill="none"/><line x1="22" y1="44" x2="58" y2="44" stroke="#C4993C" stroke-width="1.5" opacity=".5"/><circle cx="22" cy="52" r="6" stroke="#C4993C" stroke-width="1" fill="#C4993C" opacity=".15"/><circle cx="58" cy="48" r="6" stroke="#C4993C" stroke-width="1" fill="#C4993C" opacity=".15"/></svg></div>
+        <h3>Responsibility</h3>
+        <p>Own what's genuinely yours. Release what isn't. Name the real cost of what you carry.</p>
+      </div>
+      <div class="trio-dark-card reveal reveal-delay-3">
+        <div class="trio-icon"><svg viewBox="0 0 80 80" fill="none"><circle cx="35" cy="28" r="10" fill="#D4A574" opacity=".7"/><rect x="23" y="36" width="24" height="18" rx="4" fill="#2A4A54" opacity=".6"/><path d="M 47 42 Q 56 36, 64 33" stroke="#D4A574" stroke-width="4" fill="none" stroke-linecap="round" opacity=".7"/><path d="M 60 32 L 70 30 L 64 38" fill="#C4993C" opacity=".5"/></svg></div>
+        <h3>Orientation</h3>
+        <p>Choose your direction deliberately. Identify what this season of life requires of you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Three pathways -->
+<section class="trio-section cream" id="offerings">
+  <div class="container">
+    <div class="section-label" style="text-align:center;">Three Pathways</div>
+    <h2 class="reveal">How you develop with OurPath.</h2>
+    <p class="trio-subtitle reveal">Each works independently. Together, they form a complete system.</p>
+    <div class="trio-grid">
+      <div class="trio-card-bordered reveal reveal-delay-1">
+        <div class="trio-icon"><svg viewBox="0 0 80 80" fill="none"><circle cx="28" cy="30" r="9" fill="#D4A574" opacity=".7"/><rect x="18" y="38" width="20" height="14" rx="3" fill="#2A4A54" opacity=".6"/><circle cx="52" cy="32" r="8" fill="#C4946A" opacity=".7"/><rect x="43" y="39" width="18" height="13" rx="3" fill="#3B6B7A" opacity=".5"/><path d="M 38 35 Q 43 30, 44 35" stroke="#C4993C" stroke-width="0.75" opacity=".3" stroke-dasharray="3 2"/></svg></div>
+        <div class="section-label" style="text-align:center;margin-bottom:.5rem;">Guided</div>
+        <h3>1-1 Mentoring</h3>
+        <p>Personalised sessions. Someone to hold the structure while you do the work.</p>
+        <a href="/mentoring" class="card-cta">How it works &#8594;</a>
+      </div>
+      <div class="trio-card-bordered reveal reveal-delay-2">
+        <div class="trio-icon"><svg viewBox="0 0 80 80" fill="none"><circle cx="25" cy="32" r="7" fill="#D4A574" opacity=".6"/><circle cx="40" cy="28" r="8" fill="#C4946A" opacity=".7"/><circle cx="55" cy="32" r="7" fill="#D4A574" opacity=".6"/><rect x="15" y="38" width="50" height="12" rx="3" fill="#2A4A54" opacity=".4"/></svg></div>
+        <div class="section-label" style="text-align:center;margin-bottom:.5rem;">Group</div>
+        <h3>Workshop Series</h3>
+        <p>4-week guided experience. Small cohort. Structured reflective practice.</p>
+        <a href="/workshops" class="card-cta">See the structure &#8594;</a>
+      </div>
+      <div class="trio-card-bordered reveal reveal-delay-3">
+        <div class="trio-icon"><svg viewBox="0 0 80 80" fill="none"><circle cx="35" cy="28" r="9" fill="#D4A574" opacity=".7"/><rect x="25" y="36" width="20" height="14" rx="3" fill="#2A4A54" opacity=".6"/><rect x="45" y="40" width="18" height="24" rx="1.5" fill="#F7F3EE" stroke="#C4993C" stroke-width="0.75" opacity=".7"/><line x1="48" y1="46" x2="60" y2="46" stroke="#C4993C" stroke-width="0.4" opacity=".3"/><line x1="48" y1="50" x2="58" y2="50" stroke="#C4993C" stroke-width="0.4" opacity=".3"/></svg></div>
+        <div class="section-label" style="text-align:center;margin-bottom:.5rem;">Independent</div>
+        <h3>Reflective Journal</h3>
+        <p>52 weeks of structured practice. Coming soon.</p>
+        <a href="/journal" class="card-cta">Learn more &#8594;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- USP Positioning -->
+<section class="spectrum-section">
+  <div class="container">
+    <div class="section-label" style="text-align:center;">Where OurPath Sits</div>
+    <h2 class="reveal">Not therapy. Not coaching. <em>The space between.</em></h2>
+    <p class="spectrum-subtitle reveal">Structured personal development for people who are managing well but aren't growing deliberately.</p>
+    <div class="spectrum-container reveal">
+      <svg viewBox="0 0 700 160" fill="none"><line x1="60" y1="80" x2="640" y2="80" stroke="#C4993C" stroke-width="1" opacity=".3"/><circle cx="80" cy="80" r="6" stroke="#7A8B8F" stroke-width="1" fill="none" opacity=".5"/><text dominant-baseline="central" x="80" y="110" text-anchor="middle" fill="#7A8B8F" font-family="DM Sans" font-size="10" letter-spacing="1.5">THERAPY</text><circle cx="620" cy="80" r="6" stroke="#7A8B8F" stroke-width="1" fill="none" opacity=".5"/><text dominant-baseline="central" x="620" y="110" text-anchor="middle" fill="#7A8B8F" font-family="DM Sans" font-size="10" letter-spacing="1.5">COACHING</text><circle cx="300" cy="80" r="14" fill="#C4993C" opacity=".15"/><circle cx="300" cy="80" r="8" fill="#C4993C"/><text dominant-baseline="central" x="300" y="50" text-anchor="middle" fill="#C4993C" font-family="Cormorant Garamond" font-size="16" font-weight="600" font-style="italic">OurPath</text><text dominant-baseline="central" x="300" y="118" text-anchor="middle" fill="#F7F3EE" font-family="DM Sans" font-size="9" letter-spacing="2" font-weight="500">PERSONAL DEVELOPMENT</text></svg>
+    </div>
+  </div>
+</section>
+
+<!-- Meet you where you are -->
+<section class="visual-section cream">
+  <div class="container">
+    <div class="section-label reveal" style="text-align:center;">We Meet You Where You Are</div>
+    <h2 class="reveal" style="text-align:center;font-style:italic;">Three starting points. One framework.</h2>
+    <div class="personas-grid">
+      <div class="persona-card reveal reveal-delay-1"><div class="persona-label">Starting Point 1</div><h4>&#8220;I'm doing everything right but I feel stuck.&#8221;</h4><p>Career, faith, relationships &#8212; all handled. But effort alone isn't producing growth.</p><a href="/book" class="persona-arrow">Start a conversation &#8594;</a></div>
+      <div class="persona-card reveal reveal-delay-2"><div class="persona-label">Starting Point 2</div><h4>&#8220;I'm carrying more than I chose.&#8221;</h4><p>Roles and expectations accumulated before you could assess them. You need to name the cost.</p><a href="/book" class="persona-arrow">Start a conversation &#8594;</a></div>
+      <div class="persona-card reveal reveal-delay-3"><div class="persona-label">Starting Point 3</div><h4>&#8220;I know what I want but I can't move.&#8221;</h4><p>The destination is clear. The paralysis is seeing too many paths at once.</p><a href="/book" class="persona-arrow">Start a conversation &#8594;</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- Reviews -->
+<section class="reviews">
+  <div class="container">
+    <div class="section-label reveal" style="text-align:center;">What People Actually Experience</div>
+    <h2 class="reveal">Real reflections from real participants.</h2>
+    <div class="reviews-grid">
+      <div class="review-card reveal reveal-delay-1"><div class="quote-mark">&#8220;</div><blockquote>I&#8217;ve noticed it shifts between spiritual topics to things on my mind from a work perspective. It&#8217;s interesting to see the main things in my life become clearer.</blockquote><div class="review-author">A.</div><div class="review-context">Reflective journal user</div></div>
+      <div class="review-card reveal reveal-delay-2"><div class="quote-mark">&#8220;</div><blockquote>Even thinking about the questions themselves throughout the week grounds my thinking. I can have two questions on my mind and see the impact and consequences that follow from that.</blockquote><div class="review-author">M.</div><div class="review-context">Mentoring participant</div></div>
+      <div class="review-card reveal reveal-delay-3"><div class="quote-mark">&#8220;</div><blockquote>I&#8217;ve spoken about my decision paralysis before. Noticing that has come from the journalling, and now I&#8217;m finding myself being more deliberate with the steps I take and not worrying too much about the what-ifs.</blockquote><div class="review-author">S.</div><div class="review-context">Mentoring participant</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Final CTA -->
+<div class="cta-band">
+  <div class="container">
+    <div class="section-label" style="text-align:center;">Start Your Development</div>
+    <h2>Ready to move from managing to <em>growing?</em></h2>
+    <p>Book a free 20-minute conversation. No commitment &#8212; just an honest introduction.</p>
+    <div class="cta-buttons">
+      <a href="/book" class="btn-primary">Book a Free Conversation &#8594;</a>
+      <a href="/referral" class="btn-secondary">Submit a Referral</a>
+    </div>
+  </div>
+</div>
+
+<div class="floating-cta" id="floatingCta"><div class="container"><div class="floating-cta-text"><strong>OurPath</strong> &#8212; Personal development through guidance &amp; mentoring</div><a href="/book" class="hero-cta">Book a Free Conversation &#8594;</a></div></div>
+
+<footer><div class="container"><div class="footer-content"><div class="footer-brand"><div class="nav-logo"><img src="ourpath-horizontal-dark.png" alt="OurPath Guidance" style="height:36px;width:auto;display:block;margin-bottom:.5rem;"></div><p>Personal development through guidance and mentoring.</p></div><div class="footer-links"><h4>Navigate</h4><ul><li><a href="/#approach">Our Approach</a></li><li><a href="/workshops">Workshops</a></li><li><a href="/journal">Journal</a></li><li><a href="/mentoring">Mentoring</a></li><li><a href="/our-story">Our Story</a></li><li><a href="/blog">Blog</a></li><li><a href="/contact">Contact</a></li></ul></div><div class="footer-links"><h4>Get Started</h4><ul><li><a href="/book">Book a Conversation</a></li><li><a href="/referral">Referral Form</a></li></ul></div><div class="footer-links"><h4>Connect</h4><ul><li><a href="#">Instagram</a></li><li><a href="#">LinkedIn</a></li><li><a href="#">TikTok</a></li><li><a href="/contact">Email</a></li></ul></div></div><div class="footer-bottom"><p>&copy; 2026 OurPath Guidance Ltd. All rights reserved.</p><p>London, UK</p></div></div></footer>
+
+<script>
+const reveals=document.querySelectorAll('.reveal');
+const observer=new IntersectionObserver(e=>{e.forEach(t=>{if(t.isIntersecting)t.target.classList.add('visible')})},{threshold:.1,rootMargin:'0px 0px -50px 0px'});
+reveals.forEach(el=>observer.observe(el));
+window.addEventListener('scroll',()=>{document.getElementById('nav').classList.toggle('scrolled',window.scrollY>60);const fc=document.getElementById('floatingCta');fc.classList.toggle('visible',window.scrollY>600&&window.innerHeight+window.scrollY<document.body.offsetHeight-400);});
+document.querySelectorAll('.nav-links a').forEach(l=>{l.addEventListener('click',()=>document.querySelector('.nav-links').classList.remove('open'))});
+</script>
+</body>
+</html>

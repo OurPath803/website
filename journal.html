@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reflective Journal — Personal Development — OurPath Guidance</title>
+<meta name="description" content="52 weeks of structured reflective practice for personal development. Coming soon.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+<nav id="nav">
+  <div class="container">
+    <a href="/" class="nav-logo"><img src="ourpath-horizontal-dark.png" alt="OurPath Guidance" style="height:32px;width:auto;display:block;"></a>
+    <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="/workshops">Workshops</a></li>
+      <li><a href="/journal" class="active">Journal</a></li>
+      <li><a href="/mentoring">Mentoring</a></li>
+      <li><a href="/our-story">Our Story</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/contact">Contact</a></li>
+      <li><a href="/book" class="nav-cta">Book a Free Conversation &#8594;</a></li>
+    </ul>
+  </div>
+</nav>
+<section class="page-hero">
+  <div class="container"><div class="page-hero-content">
+    <div class="section-label">Personal Development &#183; Reflective Practice</div>
+    <div class="hero-line"></div>
+    <h1>Personal development<br>as a <em>weekly practice.</em></h1>
+    <p>The OurPath Reflective Journal &#8212; nine sections per entry, designed around the full framework, completed in 20&#8211;30 minutes per week.</p>
+  </div></div>
+</section>
+
+<section class="visual-section cream" style="border-top:none;">
+  <div class="container">
+    <div class="journal-grid">
+      <div class="journal-visual reveal">
+        <div class="journal-mock">
+          <div class="mock-sub">The OurPath</div>
+          <div class="mock-title">Reflective<br>Journal</div>
+          <div class="mock-line"></div>
+          <div class="mock-sub">52 Weeks</div>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="section-label">What&#8217;s Inside</div>
+        <h2 style="font-style:italic;margin-bottom:1rem;">52 weeks of structured development.</h2>
+        <p style="color:var(--subtle);font-size:.95rem;">Not a diary. Not a gratitude journal. A structured tool for personal development through reflective practice &#8212; nine sections that guide your reflection each week.</p>
+        <ul class="journal-features">
+          <li>Context &amp; Orientation &#8212; where you stood this week</li>
+          <li>Pathway Awareness &#8212; what emerged or shifted</li>
+          <li>Cost &amp; Trade-offs &#8212; what you gave and what it cost</li>
+          <li>Relational Impact &#8212; connection built or strained</li>
+          <li>Learning &amp; Clarity &#8212; what genuinely integrated</li>
+          <li>Action &amp; Restraint &#8212; what you did and chose not to</li>
+          <li>Emotional Landscape &#8212; what you carried</li>
+          <li>Spiritual Reflection &#8212; where faith met the week</li>
+          <li>Orientation Setting &#8212; what next week requires</li>
+        </ul>
+        <div class="coming-soon-badge">Coming Soon</div>
+        <p style="margin-top:1rem;font-size:.88rem;color:var(--subtle);">Leave your email and we&#8217;ll notify you the moment it&#8217;s available.</p>
+        <form name="journal-notify" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="notify-form" onsubmit="return handleNotify(event, this)">
+          <input type="hidden" name="form-name" value="journal-notify">
+          <p style="display:none"><label>Don&#8217;t fill this out: <input name="bot-field"></label></p>
+          <input type="email" name="email" required placeholder="Your email address">
+          <button type="submit">Notify Me</button>
+        </form>
+        <div class="form-success" id="notify-success" style="margin-top:1rem;max-width:400px;">
+          <div class="success-tick">&#10003;</div>
+          <p>You&#8217;re on the list. We&#8217;ll let you know when it&#8217;s ready.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="container">
+    <h2 class="reveal">Three questions about the journal.</h2>
+    <div class="faq-grid">
+      <div class="faq-item reveal"><h4>Can I use it without attending workshops?</h4><p>Yes. The journal works independently. Many people find the frameworks richer after the workshop, then continue with the journal.</p></div>
+      <div class="faq-item reveal"><h4>How long does each entry take?</h4><p>20&#8211;30 minutes. The structure keeps you focused &#8212; no blank pages, just guided prompts.</p></div>
+      <div class="faq-item reveal"><h4>Is this a gratitude journal?</h4><p>No. It&#8217;s a reflection journal for personal development. Some weeks will be uncomfortable. That&#8217;s by design.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <div class="container">
+    <div class="section-label" style="text-align:center;">Start Your Development</div>
+    <h2>Want to start your development <em>now?</em></h2>
+    <p>While the journal is being prepared, begin through 1-1 mentoring or the workshop series.</p>
+    <div class="cta-buttons">
+      <a href="/book" class="btn-primary">Book a Free Conversation &#8594;</a>
+      <a href="/workshops" class="btn-secondary">Explore Workshops</a>
+    </div>
+  </div>
+</div>
+<div class="floating-cta" id="floatingCta">
+  <div class="container">
+    <div class="floating-cta-text"><strong>OurPath</strong> &#8212; Personal development through guidance &amp; mentoring</div>
+    <a href="/book" class="hero-cta">Book a Free Conversation &#8594;</a>
+  </div>
+</div>
+<footer>
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <div class="nav-logo"><img src="ourpath-horizontal-dark.png" alt="OurPath Guidance" style="height:36px;width:auto;display:block;margin-bottom:.5rem;"></div>
+        <p>Personal development through guidance and mentoring. Reflective practice rooted in tradition, designed for modern life.</p>
+      </div>
+      <div class="footer-links"><h4>Navigate</h4><ul><li><a href="/#approach">Our Approach</a></li><li><a href="/workshops">Workshops</a></li><li><a href="/journal">Journal</a></li><li><a href="/mentoring">Mentoring</a></li><li><a href="/our-story">Our Story</a></li><li><a href="/blog">Blog</a></li><li><a href="/contact">Contact</a></li></ul></div>
+      <div class="footer-links"><h4>Get Started</h4><ul><li><a href="/book">Book a Conversation</a></li><li><a href="/referral">Referral Form</a></li></ul></div>
+      <div class="footer-links"><h4>Connect</h4><ul><li><a href="#">Instagram</a></li><li><a href="#">LinkedIn</a></li><li><a href="#">TikTok</a></li><li><a href="/contact">Email</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 OurPath Guidance Ltd. All rights reserved.</p><p>London, UK</p></div>
+  </div>
+</footer>
+<script>
+const reveals=document.querySelectorAll('.reveal');
+const observer=new IntersectionObserver(e=>{e.forEach(t=>{if(t.isIntersecting)t.target.classList.add('visible')})},{threshold:.1,rootMargin:'0px 0px -50px 0px'});
+reveals.forEach(el=>observer.observe(el));
+window.addEventListener('scroll',()=>{
+  document.getElementById('nav').classList.toggle('scrolled',window.scrollY>60);
+  const fc=document.getElementById('floatingCta');
+  fc.classList.toggle('visible',window.scrollY>400&&window.innerHeight+window.scrollY<document.body.offsetHeight-400);
+});
+document.querySelectorAll('.nav-links a').forEach(l=>{l.addEventListener('click',()=>document.querySelector('.nav-links').classList.remove('open'))});
+
+function handleNotify(e, form) {
+  e.preventDefault();
+  const data = new URLSearchParams(new FormData(form));
+  fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: data.toString() })
+    .then(() => { form.style.display = 'none'; document.getElementById('notify-success').classList.add('show'); })
+    .catch(() => { alert('Something went wrong. Please try again.'); });
+  return false;
+}
+</script>
+</body>
+</html>

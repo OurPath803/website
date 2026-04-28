@@ -71,7 +71,7 @@ a:hover { color: var(--gold-light); }
 /* ── Navigation ── */
 nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-  padding: 1.2rem 0; transition: background .4s, backdrop-filter .4s, box-shadow .4s;
+  padding: 1rem 0; transition: background .4s, backdrop-filter .4s, box-shadow .4s;
   background: rgba(26, 47, 54, .85); backdrop-filter: blur(8px);
 }
 nav.scrolled {

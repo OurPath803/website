@@ -9,17 +9,27 @@
 
 [[redirects]]
   from = "/journal"
-  to = "/journal.html"
-  status = 200
+  to = "https://portal.ourpathguidance.co.uk/login"
+  status = 302
+
+[[redirects]]
+  from = "/journal.html"
+  to = "https://portal.ourpathguidance.co.uk/login"
+  status = 302
+
+[[redirects]]
+  from = "/book"
+  to = "https://portal.ourpathguidance.co.uk/session-zero"
+  status = 302
+
+[[redirects]]
+  from = "/book.html"
+  to = "https://portal.ourpathguidance.co.uk/session-zero"
+  status = 302
 
 [[redirects]]
   from = "/mentoring"
   to = "/mentoring.html"
-  status = 200
-
-[[redirects]]
-  from = "/book"
-  to = "/book.html"
   status = 200
 
 [[redirects]]

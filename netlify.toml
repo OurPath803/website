@@ -1,5 +1,6 @@
 [build]
   publish = "."
+  command = "node scripts/build-blog.js"
 
 # Pretty URLs — serve .html files without extension
 [[redirects]]
@@ -35,6 +36,11 @@
 [[redirects]]
   from = "/referral"
   to = "/referral.html"
+  status = 200
+
+[[redirects]]
+  from = "/blog/*"
+  to = "/blog/:splat.html"
   status = 200
 
 [[redirects]]

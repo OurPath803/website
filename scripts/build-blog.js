@@ -329,7 +329,7 @@ ${SHARED_NAV}
     <h2>Want to start your development now?</h2>
     <p>Don&#8217;t wait for the blog. Start with a conversation.</p>
     <div class="cta-buttons">
-      <a href="https://portal.ourpathguidance.co.uk/session-zero" class="btn-primary">Book a Free Conversation &#8594;</a>
+      <a href="https://portal.ourpathguidance.co.uk/triage-call" class="btn-primary">Create your profile &#8594;</a>
       <a href="/mentoring" class="btn-secondary">Explore Mentoring</a>
     </div>
   </div>
@@ -363,7 +363,7 @@ ${SHARED_NAV}
   <div style="margin-top:2rem;">{{TAGS}}</div>
   <hr style="margin:3rem 0 2rem;border:0;border-top:1px solid rgba(0,0,0,0.08);"/>
   <div style="text-align:center;">
-    <a href="https://portal.ourpathguidance.co.uk/session-zero" class="btn-primary">Book a Free Conversation &#8594;</a>
+    <a href="https://portal.ourpathguidance.co.uk/triage-call" class="btn-primary">Create your profile &#8594;</a>
   </div>
 </article>
 ${SHARED_FOOTER}

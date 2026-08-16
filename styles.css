@@ -38,6 +38,14 @@ a:hover { color: var(--gold-light); }
   color: var(--gold); text-transform: uppercase; font-weight: 500; margin-bottom: 1.5rem;
 }
 
+/* Respect reduced-motion preference sitewide */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .01ms !important; animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important; scroll-behavior: auto !important;
+  }
+}
+
 /* ── Animations ── */
 @keyframes fadeUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes drawLine { from { width: 0; } to { width: 60px; } }
@@ -598,6 +606,43 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
 .payment-note strong { color: var(--dark); }
 
 /* ══════════════════════════════════════
+   PROSE SECTIONS — pricing, who this is for,
+   what happens. Plain text, no cards.
+   ══════════════════════════════════════ */
+.prose-section { padding: 5rem 0; }
+.prose-section.bordered { border-top: 1px solid var(--line); }
+.prose-section .container { max-width: 680px; }
+.prose-section h2 { font-style: italic; margin-bottom: 1.75rem; }
+.prose-section p { font-size: 1.05rem; line-height: 1.8; color: var(--body); margin-bottom: 1.4rem; }
+.prose-section p:last-child { margin-bottom: 0; }
+.prose-section p.lead { font-size: 1.15rem; }
+@media (max-width: 768px) { .prose-section { padding: 3.5rem 0; } }
+
+/* Signature device: one thin gold rule, opens a section, nothing else decorated */
+.rule { width: 60px; height: 1.5px; background: var(--gold); margin: 0 auto 2rem; border: none; }
+.rule.left { margin: 0 0 2rem; }
+
+/* Safe-contrast link for body copy on light backgrounds —
+   var(--gold) fails WCAG AA on cream/white (~2.4:1); this passes (~8:1) */
+.link-safe { color: var(--dark); text-decoration: underline; text-decoration-color: var(--gold); text-underline-offset: 3px; }
+.link-safe:hover { color: var(--gold); }
+
+/* Plain testimonials — no card, no border, no photo */
+.testimonials-plain { padding: 4rem 0; }
+.testimonials-plain .container { max-width: 680px; }
+.testimonial-plain { margin-bottom: 2.5rem; }
+.testimonial-plain:last-child { margin-bottom: 0; }
+.testimonial-plain blockquote { font-family: var(--serif); font-style: italic; font-size: 1.15rem; color: var(--dark); line-height: 1.6; margin: 0 0 .6rem; }
+.testimonial-plain cite { font-family: var(--sans); font-size: .82rem; color: var(--subtle); font-style: normal; }
+
+/* Email CTA block — one consistent pattern across all pages */
+.email-cta-block { text-align: center; padding: 3rem 0; }
+.email-cta-block p { font-size: 1.05rem; margin-bottom: .75rem; }
+.email-cta { color: var(--dark); font-family: var(--serif); font-style: italic; font-size: 1.3rem; text-decoration: underline; text-decoration-color: var(--gold); text-underline-offset: 4px; }
+.email-cta:hover { color: var(--gold); }
+.email-cta-block .referral-link { display: block; margin-top: .75rem; font-size: .85rem; }
+
+/* ══════════════════════════════════════
    FOOTER
    ══════════════════════════════════════ */
 footer { background: var(--dark); padding: 4rem 0 2rem; }
@@ -618,6 +663,9 @@ footer { background: var(--dark); padding: 4rem 0 2rem; }
   .footer-content { flex-direction: column; gap: 2rem; }
   .footer-bottom { flex-direction: column; gap: .5rem; text-align: center; }
 }
+.footer-legal { border-top: 1px solid rgba(196,153,60,.1); margin-top: 2rem; padding-top: 1.5rem; }
+.footer-legal p { color: rgba(122,139,143,.6); font-size: .78rem; line-height: 1.7; margin: 0 0 .5rem; max-width: 640px; }
+.footer-legal p:last-child { margin-bottom: 0; }
 
 /* ══════════════════════════════════════
    PARTNERS SECTION

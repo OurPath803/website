@@ -3,53 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OurPath Guidance · Personal development and mentoring for young adults</title>
-<meta name="description" content="OurPath is a personal development service for young adults. We offer 1-to-1 mentoring and guided workshops that help you get clear on where you are and where you want to go.">
+<title>OurPath Guidance · Developmental mentoring in London</title>
+<meta name="description" content="One-to-one mentoring, group sessions and programmes for organisations, based in Whitechapel and working across London. Sessions are £60, with a £30 concession rate always available.">
+<link rel="canonical" href="https://ourpathguidance.co.uk/">
+<meta property="og:title" content="OurPath Guidance · Developmental mentoring in London">
+<meta property="og:description" content="One-to-one mentoring, group sessions and programmes for organisations. Sessions are £60, with a £30 concession rate always available.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ourpathguidance.co.uk/">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
-<style>
-.illus-container{display:flex;align-items:center;justify-content:center;min-height:320px;position:relative;overflow:hidden;border-radius:12px}
-.illus-container.warm{background:linear-gradient(135deg,#F7F3EE 0%,#EDE8E0 100%)}
-.illus-container.dark{background:linear-gradient(135deg,#1A2F36 0%,#1E3640 100%)}
-.illus-container svg{width:100%;max-width:360px;height:auto}
-.illus-container.photo{min-height:420px;padding:0}
-.illus-container.photo img{width:100%;height:100%;min-height:420px;object-fit:cover;display:block;position:absolute;inset:0;border-radius:12px}
-.illus-container.photo.dark::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(26,47,54,0.55) 0%,rgba(30,54,64,0.35) 100%);border-radius:12px;pointer-events:none}
-.illus-container.photo.warm::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(247,243,238,0.18) 0%,rgba(237,232,224,0.08) 100%);border-radius:12px;pointer-events:none}
-
-/* wikiHow-style article panel */
-.wh-panel{position:relative;border-radius:14px;padding:2rem 1.75rem;display:flex;flex-direction:column;gap:1.25rem;font-family:var(--sans);box-shadow:0 1px 0 rgba(26,47,54,0.04)}
-.wh-panel.warm{background:#F7F3EE;border:1px solid rgba(196,153,60,0.22)}
-.wh-panel.dark{background:#1A2F36;border:1px solid rgba(196,153,60,0.28);color:#F5F0E8}
-.wh-header{display:flex;align-items:center;gap:.75rem;padding-bottom:.75rem;border-bottom:1px dashed rgba(196,153,60,0.35)}
-.wh-badge{font-family:var(--sans);font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:#C4993C;font-weight:600;padding:4px 10px;border:1px solid rgba(196,153,60,0.45);border-radius:100px;background:rgba(196,153,60,0.08)}
-.wh-title{font-family:var(--serif);font-size:1.15rem;font-style:italic;font-weight:500;letter-spacing:-.01em}
-.wh-panel.warm .wh-title{color:#1A2F36}
-.wh-panel.dark .wh-title{color:#F5F0E8}
-.wh-illus{display:flex;align-items:flex-end;justify-content:center;padding:.25rem 0 .5rem;min-height:140px}
-.wh-illus svg{width:100%;max-width:280px;height:auto;animation:wh-float 5s ease-in-out infinite}
-@keyframes wh-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
-.wh-steps{display:flex;flex-direction:column;gap:.85rem;margin:0;padding:0;list-style:none;counter-reset:wh-step}
-.wh-step{display:grid;grid-template-columns:28px 1fr;gap:.85rem;align-items:flex-start;counter-increment:wh-step}
-.wh-step::before{content:counter(wh-step);display:flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;font-family:var(--serif);font-weight:600;font-size:.92rem;background:#C4993C;color:#1A2F36;font-style:italic}
-.wh-panel.warm .wh-step{color:#1A2F36}
-.wh-panel.dark .wh-step{color:#F5F0E8}
-.wh-step-body{font-size:.88rem;line-height:1.5;padding-top:2px}
-.wh-step-body strong{font-family:var(--serif);font-weight:600;font-style:italic;font-size:1rem;display:block;margin-bottom:2px;color:#C4993C}
-.wh-footer{display:flex;align-items:center;justify-content:space-between;padding-top:.75rem;border-top:1px dashed rgba(196,153,60,0.35);font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;opacity:.65}
-.wh-anim-svg .drift{transform-box:fill-box;transform-origin:center;animation:wh-drift 6s ease-in-out infinite}
-.wh-anim-svg .drift-a{animation-delay:0s}
-.wh-anim-svg .drift-b{animation-delay:-1.5s;animation-duration:7s}
-.wh-anim-svg .drift-c{animation-delay:-3s;animation-duration:6.5s}
-.wh-anim-svg .drift-d{animation-delay:-4.5s;animation-duration:7.5s}
-@keyframes wh-drift{0%,100%{transform:translate(0,0)}33%{transform:translate(3px,-2px)}66%{transform:translate(-2px,3px)}}
-.wh-anim-svg .centre-glow{transform-box:fill-box;transform-origin:center;animation:wh-centre 4s ease-in-out infinite;opacity:.6}
-@keyframes wh-centre{0%,100%{opacity:.45;transform:scale(1)}50%{opacity:.75;transform:scale(1.06)}}
-@media(max-width:768px){.wh-panel{padding:1.5rem 1.25rem}.wh-illus svg{max-width:220px}}
-@media(max-width:768px){.illus-container{min-height:240px}.illus-container svg{max-width:280px}.illus-container.photo{min-height:300px}.illus-container.photo img{min-height:300px}}
-.scene-label{position:absolute;bottom:1rem;left:50%;transform:translateX(-50%);font-family:var(--sans);font-size:.68rem;letter-spacing:.15em;color:var(--gold);text-transform:uppercase;font-weight:500;opacity:.5;white-space:nowrap;z-index:2}
-</style>
 </head>
 <body>
 
@@ -59,8 +23,8 @@
     <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
     <ul class="nav-links">
       <li><a href="/mentoring">Mentoring</a></li>
+      <li><a href="/workshops">Group sessions</a></li>
       <li><a href="/our-story">Our Story</a></li>
-      <li><a href="/blog">Blog</a></li>
       <li><a href="/contact">Contact</a></li>
       <li><a href="https://portal.ourpathguidance.co.uk/login" class="nav-btn-ghost">Sign in</a></li>
       <li><a href="https://portal.ourpathguidance.co.uk/session-zero" class="nav-btn-filled">Begin Session Zero</a></li>
@@ -68,318 +32,155 @@
   </div>
 </nav>
 
-<!-- 1. HOOK -->
+<!-- HERO -->
 <section class="hero">
   <div class="container">
-    <div class="hero-split">
-      <div class="hero-content">
-        <div class="section-label">Personal Development Through Guidance &amp; Mentoring</div>
-        <h1>You're managing everything.<br>But are you <em>growing?</em></h1>
-        <div class="hero-line"></div>
-        <p>OurPath helps young adults take stock of where they are and decide where to go next. One-to-one mentoring and small workshops. It isn't therapy, and it isn't coaching. It's something quieter, and more honest.</p>
-        <div class="hero-cta-group">
-          <a href="https://portal.ourpathguidance.co.uk/session-zero" class="hero-cta-filled">Book a Free Conversation &#8594;</a>
-          <a href="#reel" class="hero-cta">See How It Works &#8594;</a>
-        </div>
-      </div>
-      <div class="hero-compass">
-        <svg viewBox="0 0 300 280" fill="none">
-          <circle cx="150" cy="140" r="120" fill="#C4993C" opacity=".06"/>
-          <rect x="80" y="175" width="140" height="6" rx="3" fill="#C4993C" opacity=".3"/>
-          <rect x="95" y="181" width="4" height="40" rx="2" fill="#C4993C" opacity=".2"/>
-          <rect x="201" y="181" width="4" height="40" rx="2" fill="#C4993C" opacity=".2"/>
-          <ellipse cx="115" cy="160" rx="18" ry="22" fill="#2A4A54" opacity=".8"/>
-          <circle cx="115" cy="125" r="16" fill="#D4A574" opacity=".9"/>
-          <path d="M 105 132 Q 115 142, 125 132" stroke="#8B6B4E" stroke-width="1" fill="none" opacity=".4"/>
-          <path d="M 99 120 Q 100 108, 115 106 Q 130 108, 131 120" fill="#1A2F36" opacity=".7"/>
-          <circle cx="110" cy="124" r="1.5" fill="#1A2F36" opacity=".6"/>
-          <circle cx="120" cy="124" r="1.5" fill="#1A2F36" opacity=".6"/>
-          <path d="M 110 130 Q 115 134, 120 130" stroke="#8B6B4E" stroke-width="1" fill="none" opacity=".5"/>
-          <path d="M 97 150 Q 85 155, 80 145" stroke="#D4A574" stroke-width="4" fill="none" stroke-linecap="round" opacity=".8"/>
-          <path d="M 133 150 Q 140 148, 145 152" stroke="#D4A574" stroke-width="4" fill="none" stroke-linecap="round" opacity=".8"/>
-          <ellipse cx="185" cy="160" rx="18" ry="22" fill="#3B6B7A" opacity=".7"/>
-          <circle cx="185" cy="125" r="15" fill="#C4946A" opacity=".9"/>
-          <path d="M 170 120 Q 172 105, 185 103 Q 198 105, 200 120" fill="#2A3F46" opacity=".6"/>
-          <circle cx="180" cy="123" r="1.5" fill="#1A2F36" opacity=".6"/>
-          <circle cx="190" cy="123" r="1.5" fill="#1A2F36" opacity=".6"/>
-          <path d="M 181 130 Q 185 132, 189 130" stroke="#8B6B4E" stroke-width="1" fill="none" opacity=".4"/>
-          <path d="M 203 155 Q 206 142, 196 132" stroke="#C4946A" stroke-width="4" fill="none" stroke-linecap="round" opacity=".8"/>
-          <rect x="140" y="168" width="20" height="14" rx="1" fill="#F7F3EE" opacity=".7" transform="rotate(-5, 150, 175)"/>
-          <line x1="144" y1="173" x2="156" y2="172" stroke="#C4993C" stroke-width="0.5" opacity=".4"/>
-          <line x1="144" y1="176" x2="154" y2="175" stroke="#C4993C" stroke-width="0.5" opacity=".4"/>
-          <rect x="120" y="166" width="10" height="12" rx="2" fill="#EDE8E0" opacity=".6"/>
-          <path d="M 123 164 Q 125 158, 123 152" stroke="#C4993C" stroke-width="0.5" opacity=".3"/>
-          <path d="M 130 140 Q 150 130, 170 140" stroke="#C4993C" stroke-width="1" opacity=".15" stroke-dasharray="4 4"/>
-        </svg>
+    <div class="hero-content" style="max-width:640px;">
+      <div class="section-label">Developmental Mentoring · Whitechapel, London</div>
+      <h1>You're managing everything.<br>Are you <em>growing?</em></h1>
+      <div class="hero-line"></div>
+      <p>OurPath is developmental mentoring for people who are holding everything together and want to work out what happens next. One-to-one, in a group, or brought into your organisation. It isn't therapy. It isn't coaching either. It's a structured conversation, held regularly, with someone whose only job in that hour is paying attention to your life.</p>
+      <div class="hero-cta-group">
+        <a href="https://portal.ourpathguidance.co.uk/session-zero" class="hero-cta-filled">Book a Free Conversation &#8594;</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- 2. REEL A: Overwhelmed -->
-<section class="visual-section cream" id="reel">
-  <div class="container">
-    <div class="visual-grid">
-      <div class="visual-text reveal">
-        <div class="section-label">Where Most People Are</div>
-        <h2>Energy goes everywhere. Growth goes nowhere.</h2>
-        <p>Work, family, faith, health, ambitions. You're pouring effort into all of them. Without a structure to hold it together, the energy scatters and nothing gets the depth it needs.</p>
-      </div>
-      <div class="wh-panel dark reveal reveal-delay-1">
-        <div class="wh-header">
-          <span class="wh-badge">How to spot it</span>
-          <span class="wh-title">Signs you're managing, not growing</span>
-        </div>
-        <div class="wh-illus">
-          <svg class="wh-anim-svg" viewBox="0 0 280 160" fill="none" aria-hidden="true">
-            <!-- empty centre: a hollow point -->
-            <circle cx="140" cy="80" r="4" fill="none" stroke="#C4993C" stroke-width="1" opacity=".5"/>
-            <circle cx="140" cy="80" r="11" fill="none" stroke="#C4993C" stroke-width="0.5" opacity=".2" stroke-dasharray="2 3"/>
-
-            <!-- four labels, each drifting independently on its own axis -->
-            <g class="drift drift-a">
-              <line x1="140" y1="80" x2="52" y2="42" stroke="#C4993C" stroke-width="0.5" opacity=".2" stroke-dasharray="2 3"/>
-              <circle cx="52" cy="42" r="18" fill="none" stroke="#C4993C" stroke-width="1" opacity=".55"/>
-              <text x="52" y="45" text-anchor="middle" fill="#F5F0E8" font-family="DM Sans" font-size="8" letter-spacing="1.4" font-weight="500">WORK</text>
-            </g>
-            <g class="drift drift-b">
-              <line x1="140" y1="80" x2="228" y2="42" stroke="#C4993C" stroke-width="0.5" opacity=".2" stroke-dasharray="2 3"/>
-              <circle cx="228" cy="42" r="18" fill="none" stroke="#C4993C" stroke-width="1" opacity=".55"/>
-              <text x="228" y="45" text-anchor="middle" fill="#F5F0E8" font-family="DM Sans" font-size="8" letter-spacing="1.4" font-weight="500">FAITH</text>
-            </g>
-            <g class="drift drift-c">
-              <line x1="140" y1="80" x2="44" y2="122" stroke="#C4993C" stroke-width="0.5" opacity=".2" stroke-dasharray="2 3"/>
-              <circle cx="44" cy="122" r="18" fill="none" stroke="#C4993C" stroke-width="1" opacity=".55"/>
-              <text x="44" y="125" text-anchor="middle" fill="#F5F0E8" font-family="DM Sans" font-size="8" letter-spacing="1.4" font-weight="500">FAMILY</text>
-            </g>
-            <g class="drift drift-d">
-              <line x1="140" y1="80" x2="236" y2="122" stroke="#C4993C" stroke-width="0.5" opacity=".2" stroke-dasharray="2 3"/>
-              <circle cx="236" cy="122" r="18" fill="none" stroke="#C4993C" stroke-width="1" opacity=".55"/>
-              <text x="236" y="125" text-anchor="middle" fill="#F5F0E8" font-family="DM Sans" font-size="8" letter-spacing="1.4" font-weight="500">HEALTH</text>
-            </g>
-          </svg>
-        </div>
-        <ol class="wh-steps">
-          <li class="wh-step"><div class="wh-step-body"><strong>You're always busy.</strong>But you can't name what this season is actually asking of you.</div></li>
-          <li class="wh-step"><div class="wh-step-body"><strong>Effort keeps going up.</strong>Depth keeps going down. Everything gets surface attention.</div></li>
-          <li class="wh-step"><div class="wh-step-body"><strong>You feel stuck.</strong>You aren't in crisis. You're just unclear on which direction is actually yours.</div></li>
-        </ol>
-        <div class="wh-footer"><span>Step-by-step · 3 of 3</span><span>OurPath · Reel A</span></div>
-      </div>
-    </div>
+<!-- Founder line -->
+<section class="prose-section" style="padding:4rem 0 3rem;">
+  <div class="container" style="max-width:560px;text-align:center;">
+    <div class="rule" style="margin-bottom:1.5rem;"></div>
+    <blockquote style="font-family:var(--serif);font-style:italic;font-size:1.3rem;color:var(--dark);line-height:1.5;margin-bottom:1rem;">&#8220;When you discover your path, you stop being lost to all the others.&#8221;</blockquote>
+    <p style="margin-bottom:0;"><span style="color:var(--subtle);font-size:.92rem;">Ustadh Shakil Moazzem, founder</span> &#183; <a href="/our-story" class="link-safe">Read our story &#8594;</a></p>
   </div>
 </section>
 
-<!-- REEL B: Centred -->
-<section class="visual-section white">
-  <div class="container">
-    <div class="visual-grid reverse">
-      <div class="visual-text reveal">
-        <div class="section-label">What Reflective Practice Changes</div>
-        <h2>Same life. Routed through reflection.</h2>
-        <p>The demands don't disappear. They stop competing. Reflective practice gives you a centre to route decisions through, so every part of your life gets the attention it deserves.</p>
-      </div>
-      <div class="wh-panel warm reveal reveal-delay-1">
-        <div class="wh-header">
-          <span class="wh-badge">How to get there</span>
-          <span class="wh-title">Routing your life through reflection</span>
-        </div>
-        <div class="wh-illus">
-          <svg class="wh-anim-svg" viewBox="0 0 280 160" fill="none" aria-hidden="true">
-            <!-- single horizontal axis of alignment -->
-            <line x1="30" y1="80" x2="250" y2="80" stroke="#C4993C" stroke-width="1" opacity=".45"/>
+<!-- Three services -->
+<section class="prose-section bordered" id="services">
+  <div class="container" style="max-width:720px;">
+    <h2 style="text-align:center;">Three ways to work with us.</h2>
 
-            <!-- four labels, aligned on the same axis, equally spaced -->
-            <g>
-              <circle cx="56" cy="80" r="17" fill="#1A2F36" stroke="#C4993C" stroke-width="1"/>
-              <text x="56" y="83" text-anchor="middle" fill="#F5F0E8" font-family="DM Sans" font-size="8" letter-spacing="1.4" font-weight="500">WORK</text>
-            </g>
-            <g>
-              <circle cx="112" cy="80" r="17" fill="#1A2F36" stroke="#C4993C" stroke-width="1"/>
-              <text x="112" y="83" text-anchor="middle" fill="#F5F0E8" font-family="DM Sans" font-size="8" letter-spacing="1.4" font-weight="500">FAMILY</text>
-            </g>
-            <g>
-              <circle cx="168" cy="80" r="17" fill="#1A2F36" stroke="#C4993C" stroke-width="1"/>
-              <text x="168" y="83" text-anchor="middle" fill="#F5F0E8" font-family="DM Sans" font-size="8" letter-spacing="1.4" font-weight="500">FAITH</text>
-            </g>
-            <g>
-              <circle cx="224" cy="80" r="17" fill="#1A2F36" stroke="#C4993C" stroke-width="1"/>
-              <text x="224" y="83" text-anchor="middle" fill="#F5F0E8" font-family="DM Sans" font-size="8" letter-spacing="1.4" font-weight="500">HEALTH</text>
-            </g>
+    <div class="rule"></div>
+    <h3>One-to-one mentoring</h3>
+    <p>Weekly or fortnightly sessions with one mentor, built around what's actually happening in your life right now. This is the core of what we do. <a href="/mentoring" class="link-safe">Read more &#8594;</a></p>
 
-            <!-- centre point: reflection -->
-            <g transform="translate(140 80)">
-              <circle cx="0" cy="0" r="28" fill="#F7F3EE" class="centre-glow"/>
-              <circle cx="0" cy="0" r="22" fill="none" stroke="#C4993C" stroke-width="1" opacity=".6"/>
-              <circle cx="0" cy="0" r="4" fill="#C4993C"/>
-              <text x="0" y="-38" text-anchor="middle" fill="#C4993C" font-family="DM Sans" font-size="7" letter-spacing="2.2" font-weight="600">REFLECTION</text>
-            </g>
-          </svg>
-        </div>
-        <ol class="wh-steps">
-          <li class="wh-step"><div class="wh-step-body"><strong>Name what you carry.</strong>Roles, expectations, assumptions. Get them on the page, not just in your head.</div></li>
-          <li class="wh-step"><div class="wh-step-body"><strong>Route decisions through a centre.</strong>One structured question, asked honestly, clarifies more than ten urgent ones.</div></li>
-          <li class="wh-step"><div class="wh-step-body"><strong>Choose your direction.</strong>Not all at once. Just the next faithful step, and the one after that.</div></li>
-        </ol>
-        <div class="wh-footer"><span>Step-by-step · 3 of 3</span><span>OurPath · Reel B</span></div>
-      </div>
-    </div>
+    <div class="rule"></div>
+    <h3>Group sessions</h3>
+    <p>Realign is a free Saturday drop-in, pay what you can. The Gift Series is a four-session series on mind, heart, soul and hands, as a full run or single sessions. <a href="/workshops" class="link-safe">Read more &#8594;</a></p>
+
+    <div class="rule"></div>
+    <h3>For organisations</h3>
+    <p>Programmes for mosques, colleges, student societies, schools and community organisations, scoped to your setting. <a href="/contact" class="link-safe">Get in touch &#8594;</a></p>
   </div>
 </section>
 
-<!-- Three pillars -->
-<section class="trio-section dark" id="approach">
+<!-- Pricing transparency -->
+<section class="prose-section bordered">
   <div class="container">
-    <div class="section-label" style="text-align:center;">Our Approach</div>
-    <h2 class="reveal">Three commitments. One framework.</h2>
-    <p class="trio-subtitle reveal">A structured approach to personal development, informed by Islamic scholarship and lived through honest conversation.</p>
-    <div class="trio-grid">
-      <div class="trio-dark-card reveal reveal-delay-1">
-        <div class="trio-icon"><svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="30" r="10" fill="#D4A574" opacity=".7"/><rect x="28" y="38" width="24" height="18" rx="4" fill="#2A4A54" opacity=".6"/><line x1="52" y1="40" x2="52" y2="30" stroke="#D4A574" stroke-width="3" opacity=".6" stroke-linecap="round"/><rect x="52" y="20" width="20" height="20" rx="2" stroke="#C4993C" stroke-width="1.5" fill="none" opacity=".6"/><circle cx="62" cy="30" r="3" fill="#C4993C" opacity=".3"/></svg></div>
-        <h3>Clarity</h3>
-        <p>See where you actually stand. Map your roles, distinguish what you chose from what you inherited.</p>
-      </div>
-      <div class="trio-dark-card reveal reveal-delay-2">
-        <div class="trio-icon"><svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="28" r="10" fill="#D4A574" opacity=".7"/><rect x="28" y="36" width="24" height="18" rx="4" fill="#2A4A54" opacity=".6"/><path d="M 30 42 Q 26 43, 22 44" stroke="#D4A574" stroke-width="3" opacity=".6" stroke-linecap="round" fill="none"/><path d="M 50 42 Q 54 43, 58 44" stroke="#D4A574" stroke-width="3" opacity=".6" stroke-linecap="round" fill="none"/><line x1="22" y1="44" x2="58" y2="44" stroke="#C4993C" stroke-width="1.5" opacity=".5"/><circle cx="22" cy="52" r="6" stroke="#C4993C" stroke-width="1" fill="#C4993C" opacity=".15"/><circle cx="58" cy="48" r="6" stroke="#C4993C" stroke-width="1" fill="#C4993C" opacity=".15"/></svg></div>
-        <h3>Responsibility</h3>
-        <p>Own what's genuinely yours. Release what isn't. Name the real cost of what you carry.</p>
-      </div>
-      <div class="trio-dark-card reveal reveal-delay-3">
-        <div class="trio-icon"><svg viewBox="0 0 80 80" fill="none"><circle cx="35" cy="28" r="10" fill="#D4A574" opacity=".7"/><rect x="23" y="36" width="24" height="18" rx="4" fill="#2A4A54" opacity=".6"/><path d="M 47 42 Q 56 36, 64 33" stroke="#D4A574" stroke-width="4" fill="none" stroke-linecap="round" opacity=".7"/><path d="M 60 32 L 70 30 L 64 38" fill="#C4993C" opacity=".5"/></svg></div>
-        <h3>Orientation</h3>
-        <p>Choose your direction deliberately. Identify what this season of life requires of you.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Three pathways -->
-<section class="trio-section cream" id="offerings">
-  <div class="container">
-    <div class="section-label" style="text-align:center;">Three Pathways</div>
-    <h2 class="reveal">How you develop with OurPath.</h2>
-    <p class="trio-subtitle reveal">Each works independently. Together, they form a complete system.</p>
-    <div class="trio-grid">
-      <div class="trio-card-bordered reveal reveal-delay-1">
-        <div class="trio-icon"><svg viewBox="0 0 80 80" fill="none"><circle cx="28" cy="30" r="9" fill="#D4A574" opacity=".7"/><rect x="18" y="38" width="20" height="14" rx="3" fill="#2A4A54" opacity=".6"/><circle cx="52" cy="32" r="8" fill="#C4946A" opacity=".7"/><rect x="43" y="39" width="18" height="13" rx="3" fill="#3B6B7A" opacity=".5"/><path d="M 38 35 Q 43 30, 44 35" stroke="#C4993C" stroke-width="0.75" opacity=".3" stroke-dasharray="3 2"/></svg></div>
-        <div class="section-label" style="text-align:center;margin-bottom:.5rem;">Guided</div>
-        <h3>1-1 Mentoring</h3>
-        <p>Personalised sessions. Someone to hold the structure while you do the work.</p>
-        <a href="/mentoring" class="card-cta">How it works &#8594;</a>
-      </div>
-      <div class="trio-card-bordered reveal reveal-delay-2">
-        <div class="trio-icon"><svg viewBox="0 0 80 80" fill="none"><circle cx="25" cy="32" r="7" fill="#D4A574" opacity=".6"/><circle cx="40" cy="28" r="8" fill="#C4946A" opacity=".7"/><circle cx="55" cy="32" r="7" fill="#D4A574" opacity=".6"/><rect x="15" y="38" width="50" height="12" rx="3" fill="#2A4A54" opacity=".4"/></svg></div>
-        <div class="section-label" style="text-align:center;margin-bottom:.5rem;">Group</div>
-        <h3>Workshop Series</h3>
-        <p>4-week guided experience. Small cohort. Structured reflective practice.</p>
-        <a href="/workshops" class="card-cta">See the structure &#8594;</a>
-      </div>
-      <div class="trio-card-bordered reveal reveal-delay-3">
-        <div class="trio-icon"><svg viewBox="0 0 80 80" fill="none"><circle cx="35" cy="28" r="9" fill="#D4A574" opacity=".7"/><rect x="25" y="36" width="20" height="14" rx="3" fill="#2A4A54" opacity=".6"/><rect x="45" y="40" width="18" height="24" rx="1.5" fill="#F7F3EE" stroke="#C4993C" stroke-width="0.75" opacity=".7"/><line x1="48" y1="46" x2="60" y2="46" stroke="#C4993C" stroke-width="0.4" opacity=".3"/><line x1="48" y1="50" x2="58" y2="50" stroke="#C4993C" stroke-width="0.4" opacity=".3"/></svg></div>
-        <div class="section-label" style="text-align:center;margin-bottom:.5rem;">Independent</div>
-        <h3>Reflective Journal</h3>
-        <p>52 weeks of structured practice. Coming soon.</p>
-        <a href="https://portal.ourpathguidance.co.uk/login" class="card-cta">Learn more &#8594;</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- USP Positioning -->
-<section class="spectrum-section">
-  <div class="container">
-    <div class="section-label" style="text-align:center;">Where OurPath Sits</div>
-    <h2 class="reveal">The space in between.</h2>
-    <p class="spectrum-subtitle reveal">For people who are managing well, but who know they aren't growing on purpose.</p>
-    <div class="spectrum-container reveal">
-      <svg viewBox="0 0 700 160" fill="none"><line x1="60" y1="80" x2="640" y2="80" stroke="#C4993C" stroke-width="1" opacity=".3"/><circle cx="80" cy="80" r="6" stroke="#7A8B8F" stroke-width="1" fill="none" opacity=".5"/><text dominant-baseline="central" x="80" y="110" text-anchor="middle" fill="#7A8B8F" font-family="DM Sans" font-size="10" letter-spacing="1.5">THERAPY</text><circle cx="620" cy="80" r="6" stroke="#7A8B8F" stroke-width="1" fill="none" opacity=".5"/><text dominant-baseline="central" x="620" y="110" text-anchor="middle" fill="#7A8B8F" font-family="DM Sans" font-size="10" letter-spacing="1.5">COACHING</text><circle cx="300" cy="80" r="14" fill="#C4993C" opacity=".15"/><circle cx="300" cy="80" r="8" fill="#C4993C"/><text dominant-baseline="central" x="300" y="50" text-anchor="middle" fill="#C4993C" font-family="Cormorant Garamond" font-size="16" font-weight="600" font-style="italic">OurPath</text><text dominant-baseline="central" x="300" y="118" text-anchor="middle" fill="#F7F3EE" font-family="DM Sans" font-size="9" letter-spacing="2" font-weight="500">PERSONAL DEVELOPMENT</text></svg>
-    </div>
-  </div>
-</section>
-
-<!-- Meet you where you are -->
-<section class="visual-section cream">
-  <div class="container">
-    <div class="section-label reveal" style="text-align:center;">We Meet You Where You Are</div>
-    <h2 class="reveal" style="text-align:center;font-style:italic;">Three starting points. One framework.</h2>
-    <div class="personas-grid">
-      <div class="persona-card reveal reveal-delay-1"><div class="persona-label">Starting Point 1</div><h4>&#8220;I'm doing everything right but I feel stuck.&#8221;</h4><p>Career, faith, relationships. It's all handled. Effort on its own isn't producing growth any more.</p><a href="https://portal.ourpathguidance.co.uk/session-zero" class="persona-arrow">Start a conversation &#8594;</a></div>
-      <div class="persona-card reveal reveal-delay-2"><div class="persona-label">Starting Point 2</div><h4>&#8220;I'm carrying more than I chose.&#8221;</h4><p>Roles and expectations accumulated before you could assess them. You need to name the cost.</p><a href="https://portal.ourpathguidance.co.uk/session-zero" class="persona-arrow">Start a conversation &#8594;</a></div>
-      <div class="persona-card reveal reveal-delay-3"><div class="persona-label">Starting Point 3</div><h4>&#8220;I know what I want but I can't move.&#8221;</h4><p>The destination is clear. The paralysis is seeing too many paths at once.</p><a href="https://portal.ourpathguidance.co.uk/session-zero" class="persona-arrow">Start a conversation &#8594;</a></div>
-    </div>
-  </div>
-</section>
-
-<!-- Reviews -->
-<section class="reviews">
-  <div class="container">
-    <div class="section-label reveal" style="text-align:center;">What People Say</div>
-    <h2 class="reveal">In their own words.</h2>
-    <div class="reviews-grid">
-      <div class="review-card reveal reveal-delay-1"><div class="quote-mark">&#8220;</div><blockquote>I&#8217;ve noticed it shifts between spiritual topics to things on my mind from a work perspective. It&#8217;s interesting to see the main things in my life become clearer.</blockquote><div class="review-author">A.</div><div class="review-context">Reflective journal user</div></div>
-      <div class="review-card reveal reveal-delay-2"><div class="quote-mark">&#8220;</div><blockquote>Even thinking about the questions themselves throughout the week grounds my thinking. I can have two questions on my mind and see the impact and consequences that follow from that.</blockquote><div class="review-author">M.</div><div class="review-context">Mentoring participant</div></div>
-      <div class="review-card reveal reveal-delay-3"><div class="quote-mark">&#8220;</div><blockquote>I&#8217;ve spoken about my decision paralysis before. Noticing that has come from the journalling, and now I&#8217;m finding myself being more deliberate with the steps I take and not worrying too much about the what-ifs.</blockquote><div class="review-author">S.</div><div class="review-context">Mentoring participant</div></div>
-    </div>
+    <div class="rule"></div>
+    <h2>What it costs.</h2>
+    <p>A first conversation is free and lasts twenty minutes. It's a chance to ask questions and work out together whether this is the right kind of help for you right now.</p>
+    <p>Sessions cost £60, paid before each one. There are no packages and no minimum commitment. You keep coming for as long as it's useful, and you stop whenever you want.</p>
+    <p>A reduced fee of £30 is held for anyone on a low income, in study, or for whom £60 is out of reach. A limited number of these places run at any one time. If you need one, say so when you get in touch. No proof required.</p>
+    <p>Payment is by bank transfer, arranged directly. Details are sent once you've been in touch.</p>
   </div>
 </section>
 
 <!-- Our Partners -->
-<!--
-  PARTNERS DATA — edit the cards below to add/update partners.
-  If a partner has no logo file yet, leave out the <img> and use .partner-name-large instead.
-  {
-    name:    'Qiman',
-    sector:  'Institute of Arabic & Islamic Sciences',
-    logoUrl: 'partners/qiman.png',   // add file when available; remove .partner-name-large and add <img> then
-    url:     'https://www.qiman.org',
-  },
-  // Slot 2 — TBC
-  // Slot 3 — TBC
--->
 <section class="partners">
   <div class="container">
-    <div class="section-label">Our partners</div>
+    <div class="section-label" style="color:var(--dark);opacity:.6;">Our partners</div>
     <h2>Working alongside</h2>
     <p class="lede">Organisations doing work that complements our own.</p>
     <div class="partners-grid">
-
-      <!-- Qiman — no logo file yet; swap .partner-name-large for <img> once logo is supplied -->
       <div class="partner-card solo">
         <p class="partner-name-large">Qiman</p>
         <p class="partner-sector">Institute of Arabic &amp; Islamic Sciences</p>
         <a href="https://www.qiman.org" class="partner-link" target="_blank" rel="noopener">Visit website &#8594;</a>
       </div>
-
-      <!-- Slot 2 — add partner card here when ready -->
-      <!-- Slot 3 — add partner card here when ready -->
-
     </div>
   </div>
 </section>
 
-<!-- Final CTA -->
+<!-- Contact CTA -->
 <div class="cta-band">
   <div class="container">
-    <div class="section-label" style="text-align:center;">Start Your Development</div>
-    <h2>Ready to move from managing to <em>growing?</em></h2>
-    <p>Book a free 20-minute conversation. There's no commitment. It's just a chance to talk.</p>
+    <div class="section-label" style="text-align:center;">Start Here</div>
+    <h2>Ready to talk?</h2>
+    <p>Book a free 20-minute conversation. No commitment, just a chance to talk.</p>
     <div class="cta-buttons">
       <a href="https://portal.ourpathguidance.co.uk/session-zero" class="btn-primary">Book a Free Conversation &#8594;</a>
-      <a href="/referral" class="btn-secondary">Submit a Referral</a>
     </div>
   </div>
 </div>
 
-<div class="floating-cta" id="floatingCta"><div class="container"><div class="floating-cta-text"><strong>OurPath Guidance</strong> &middot; personal development and mentoring</div><a href="https://portal.ourpathguidance.co.uk/session-zero" class="hero-cta">Book a Free Conversation &#8594;</a></div></div>
+<div class="email-cta-block">
+  <div class="container">
+    <p>Prefer to email first? We'll go from there.</p>
+    <a class="email-cta" data-u="hello" data-d="ourpathguidance.co.uk" href="#" aria-label="Email OurPath Guidance">
+      <span class="email-text">hello at ourpathguidance dot co dot uk</span>
+    </a>
+    <a href="/referral" class="referral-link link-safe">Or submit a referral &#8594;</a>
+  </div>
+</div>
 
-<footer><div class="container"><div class="footer-content"><div class="footer-brand"><div class="nav-logo"><img src="ourpath-horizontal-dark.png" alt="OurPath Guidance" style="height:36px;width:auto;display:block;margin-bottom:.5rem;"></div><p>Personal development through guidance and mentoring.</p></div><div class="footer-links"><h4>Navigate</h4><ul><li><a href="/#approach">Our Approach</a></li><li><a href="/mentoring">Mentoring</a></li><li><a href="/our-story">Our Story</a></li><li><a href="/blog">Blog</a></li><li><a href="/contact">Contact</a></li></ul></div><div class="footer-links"><h4>Get Started</h4><ul><li><a href="https://portal.ourpathguidance.co.uk/session-zero">Begin Session Zero</a></li><li><a href="https://portal.ourpathguidance.co.uk/login">Sign in to Portal</a></li><li><a href="/referral">Referral Form</a></li></ul></div><div class="footer-links"><h4>Connect</h4><ul><li><a href="#">Instagram</a></li><li><a href="#">LinkedIn</a></li><li><a href="#">TikTok</a></li><li><a href="/contact">Email</a></li></ul></div></div><div class="footer-bottom"><p>&copy; 2026 OurPath Guidance Ltd. All rights reserved.</p><p>London, UK</p></div></div></footer>
+<div class="floating-cta" id="floatingCta"><div class="container"><div class="floating-cta-text"><strong>OurPath Guidance</strong> &middot; developmental mentoring</div><a href="https://portal.ourpathguidance.co.uk/session-zero" class="hero-cta">Book a Free Conversation &#8594;</a></div></div>
+
+<footer>
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <div class="nav-logo"><img src="ourpath-horizontal-dark.png" alt="OurPath Guidance" style="height:36px;width:auto;display:block;margin-bottom:.5rem;"></div>
+        <p>Developmental mentoring, based in Whitechapel and working across London.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="/mentoring">Mentoring</a></li>
+          <li><a href="/workshops">Group sessions</a></li>
+          <li><a href="/our-story">Our Story</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Get Started</h4>
+        <ul>
+          <li><a href="https://portal.ourpathguidance.co.uk/session-zero">Begin Session Zero</a></li>
+          <li><a href="https://portal.ourpathguidance.co.uk/login">Sign in to Portal</a></li>
+          <li><a href="/referral">Referral Form</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Contact</h4>
+        <ul>
+          <li><a class="email-cta-footer" data-u="hello" data-d="ourpathguidance.co.uk" href="#"><span class="email-text">hello at ourpathguidance dot co dot uk</span></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <p>OurPath is non-clinical developmental mentoring. It does not diagnose or treat any medical or mental health condition.</p>
+      <p>If you're in crisis, contact your GP, call NHS&nbsp;111 and select option&nbsp;2, or call 999 in an emergency.</p>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 OurPath Guidance Ltd. All rights reserved.</p>
+      <p>London, UK</p>
+    </div>
+  </div>
+</footer>
 
 <script>
-const reveals=document.querySelectorAll('.reveal');
-const observer=new IntersectionObserver(e=>{e.forEach(t=>{if(t.isIntersecting)t.target.classList.add('visible')})},{threshold:.1,rootMargin:'0px 0px -50px 0px'});
-reveals.forEach(el=>observer.observe(el));
-window.addEventListener('scroll',()=>{document.getElementById('nav').classList.toggle('scrolled',window.scrollY>60);const fc=document.getElementById('floatingCta');fc.classList.toggle('visible',window.scrollY>600&&window.innerHeight+window.scrollY<document.body.offsetHeight-400);});
-document.querySelectorAll('.nav-links a').forEach(l=>{l.addEventListener('click',()=>document.querySelector('.nav-links').classList.remove('open'))});
+document.querySelectorAll('.email-cta, .email-cta-footer').forEach(a => {
+  const addr = a.dataset.u + '@' + a.dataset.d;
+  a.href = 'mailto:' + addr;
+  a.querySelector('.email-text').textContent = addr;
+});
+window.addEventListener('scroll', () => {
+  document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 60);
+  const fc = document.getElementById('floatingCta');
+  fc.classList.toggle('visible', window.scrollY > 600 && window.innerHeight + window.scrollY < document.body.offsetHeight - 400);
+});
+document.querySelectorAll('.nav-links a').forEach(l => { l.addEventListener('click', () => document.querySelector('.nav-links').classList.remove('open')) });
 </script>
 </body>
 </html>

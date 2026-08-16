@@ -11,6 +11,11 @@
   --cream-dark: #EDE8E0;
   --gold: #C4993C;
   --gold-light: #D4AD5A;
+  /* Text/link-only variant of gold. #C4993C is 2.4:1 on cream, 2.6:1 on white — fails
+     WCAG AA at any text size. #85682A is 4.7:1 on cream, 5.2:1 on white — passes.
+     Keep --gold for rules, borders, icons and text already on the dark navy
+     (5.3:1, passes there); use --gold-text only for gold text/links on light backgrounds. */
+  --gold-text: #85682A;
   --subtle: #7A8B8F;
   --body: #2A3F46;
   --white: #FFFFFF;
@@ -60,21 +65,6 @@ a:hover { color: var(--gold-light); }
 .reveal-delay-1 { transition-delay: .15s; }
 .reveal-delay-2 { transition-delay: .3s; }
 .reveal-delay-3 { transition-delay: .45s; }
-
-/* SVG diagram animations — triggered by .visible on parent */
-.reveal.visible .svg-draw { animation: drawPath 1.5s ease forwards; }
-.reveal.visible .svg-dot { animation: scaleIn .6s ease forwards; }
-.reveal.visible .svg-dot-d1 { animation-delay: .8s; }
-.reveal.visible .svg-dot-d2 { animation-delay: 1.2s; }
-.reveal.visible .svg-dot-d3 { animation-delay: 1.6s; }
-.reveal.visible .svg-fade { animation: fadeIn .8s ease forwards; }
-.reveal.visible .svg-fade-d1 { animation-delay: .4s; }
-.reveal.visible .svg-fade-d2 { animation-delay: .8s; }
-.reveal.visible .svg-fade-d3 { animation-delay: 1.2s; }
-
-.svg-draw { stroke-dasharray: 200; stroke-dashoffset: 200; }
-.svg-dot { transform: scale(0); opacity: 0; }
-.svg-fade { opacity: 0; }
 
 /* ── Navigation ── */
 nav {
@@ -218,18 +208,6 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
 .visual-grid.reverse { direction: rtl; }
 .visual-grid.reverse > * { direction: ltr; }
 @media (max-width: 768px) { .visual-grid, .visual-grid.reverse { grid-template-columns: 1fr; gap: 2rem; direction: ltr; } }
-
-.diagram-container {
-  background: var(--dark); padding: 2.5rem; display: flex; align-items: center;
-  justify-content: center; min-height: 300px; position: relative; overflow: hidden;
-}
-.diagram-container::before {
-  content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
-  background: radial-gradient(circle at 50% 50%, rgba(196,153,60,.06), transparent 70%); pointer-events: none;
-}
-.visual-section.dark .diagram-container { background: var(--dark-mid); }
-.diagram-container svg { width: 100%; max-width: 320px; height: auto; position: relative; }
-@media (max-width: 768px) { .diagram-container { min-height: 240px; padding: 2rem; } }
 
 .visual-text h2 { font-style: italic; margin-bottom: 1rem; }
 .visual-text p { color: var(--subtle); font-size: .95rem; line-height: 1.8; }
@@ -416,10 +394,6 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
 .week-card h4 { font-family: var(--serif); font-size: 1.15rem; color: var(--dark); margin-bottom: .5rem; font-weight: 600; }
 .week-card p { font-size: .88rem; color: var(--subtle); margin: 0; line-height: 1.6; }
 @media (max-width: 768px) { .week-grid { grid-template-columns: 1fr; } }
-.workshop-details { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; padding-top: 2rem; border-top: 1px solid var(--line); }
-.detail-item h4 { font-family: var(--sans); font-size: .75rem; letter-spacing: .15em; color: var(--gold); text-transform: uppercase; margin-bottom: .5rem; }
-.detail-item p { color: var(--body); font-size: .95rem; margin: 0; }
-@media (max-width: 768px) { .workshop-details { grid-template-columns: 1fr; } }
 
 /* ══════════════════════════════════════
    JOURNAL
@@ -625,7 +599,7 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
 /* Safe-contrast link for body copy on light backgrounds —
    var(--gold) fails WCAG AA on cream/white (~2.4:1); this passes (~8:1) */
 .link-safe { color: var(--dark); text-decoration: underline; text-decoration-color: var(--gold); text-underline-offset: 3px; }
-.link-safe:hover { color: var(--gold); }
+.link-safe:hover { color: var(--gold-text); }
 
 /* Plain testimonials — no card, no border, no photo */
 .testimonials-plain { padding: 4rem 0; }
@@ -639,7 +613,7 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
 .email-cta-block { text-align: center; padding: 3rem 0; }
 .email-cta-block p { font-size: 1.05rem; margin-bottom: .75rem; }
 .email-cta { color: var(--dark); font-family: var(--serif); font-style: italic; font-size: 1.3rem; text-decoration: underline; text-decoration-color: var(--gold); text-underline-offset: 4px; }
-.email-cta:hover { color: var(--gold); }
+.email-cta:hover { color: var(--gold-text); }
 .email-cta-block .referral-link { display: block; margin-top: .75rem; font-size: .85rem; }
 
 /* ══════════════════════════════════════
@@ -687,7 +661,7 @@ footer { background: var(--dark); padding: 4rem 0 2rem; }
 .partner-name { font-family: var(--serif); color: var(--dark); font-size: 1.15rem; font-weight: 600; margin-top: .4rem; }
 .partner-name-large { font-family: var(--serif); color: var(--dark); font-size: 1.75rem; font-weight: 600; margin-top: .4rem; }
 .partner-sector { font-family: var(--sans); font-style: italic; color: var(--subtle); font-size: .875rem; }
-.partner-link { font-family: var(--sans); font-size: .8rem; color: var(--gold); letter-spacing: .04em; margin-top: .4rem; }
+.partner-link { font-family: var(--sans); font-size: .8rem; color: var(--gold-text); letter-spacing: .04em; margin-top: .4rem; }
 .partner-link:hover { color: var(--dark); }
 .partner-card.solo { max-width: 360px; }
 @media (max-width: 768px) {

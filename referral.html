@@ -3,8 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Referral Form — OurPath Guidance</title>
+<title>Referral form · OurPath Guidance</title>
 <meta name="description" content="Submit a referral or self-referral for OurPath developmental mentoring. This form provides the information we need for your Session Zero intake.">
+<link rel="canonical" href="https://ourpathguidance.co.uk/referral">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
@@ -19,6 +20,8 @@
     </button>
     <ul class="nav-links">
       <li><a href="/mentoring">Mentoring</a></li>
+      <li><a href="/workshops">Group sessions</a></li>
+      <li><a href="/organisations">For organisations</a></li>
       <li><a href="/our-story">Our Story</a></li>
       <li><a href="/blog">Blog</a></li>
       <li><a href="/contact">Contact</a></li>
@@ -34,7 +37,7 @@
       <div class="section-label">Referral</div>
       <div class="hero-line"></div>
       <h1>Begin your<br>development <em>here.</em></h1>
-      <p>Whether you're referring yourself or someone else, this form gives us the information we need to prepare for your first conversation.</p>
+      <p>Whether you're referring yourself or someone else, this form gives us what we need to prepare for your first conversation.</p>
     </div>
   </div>
 </section>
@@ -109,11 +112,11 @@
         </div>
         <div class="form-group">
           <label for="ref-situation">What are you currently navigating?</label>
-          <textarea id="ref-situation" name="situation" rows="4" placeholder="No need for detail &#8212; just enough so we can prepare for the conversation. What's the main thing you're sitting with right now?"></textarea>
+          <textarea id="ref-situation" name="situation" rows="4" placeholder="No need for detail, just enough so we can prepare for the conversation. What's the main thing you're sitting with right now?"></textarea>
         </div>
         <div class="form-group">
           <label for="ref-tried">Have you tried any support before? (therapy, coaching, mentoring, etc.)</label>
-          <textarea id="ref-tried" name="previous-support" rows="3" placeholder="Brief details of any previous support &#8212; or 'none' if this is your first time."></textarea>
+          <textarea id="ref-tried" name="previous-support" rows="3" placeholder="Brief details of any previous support, or 'none' if this is your first time."></textarea>
         </div>
         <div class="form-group">
           <label for="ref-hope">What would a helpful outcome look like for you?</label>
@@ -203,21 +206,20 @@
   </div>
 </div>
 
-<div class="floating-cta" id="floatingCta"><div class="container"><div class="floating-cta-text"><strong>OurPath</strong> &#8212; Personal development through guidance &amp; mentoring</div><a href="https://portal.ourpathguidance.co.uk/session-zero" class="hero-cta">Book a Free Conversation &#8594;</a></div></div>
+<div class="floating-cta" id="floatingCta"><div class="container"><div class="floating-cta-text"><strong>OurPath Guidance</strong> &#183; developmental mentoring</div><a href="https://portal.ourpathguidance.co.uk/session-zero" class="hero-cta">Book a Free Conversation &#8594;</a></div></div>
 <footer>
   <div class="container">
     <div class="footer-content">
       <div class="footer-brand">
         <div class="nav-logo"><img src="ourpath-horizontal-dark.png" alt="OurPath Guidance" style="height:36px;width:auto;display:block;margin-bottom:.5rem;"></div>
-        <p>Personal development through guidance and mentoring. Reflective practice rooted in tradition, designed for modern life.</p>
+        <p>Developmental mentoring, based in Whitechapel and working across London.</p>
       </div>
       <div class="footer-links">
         <h4>Navigate</h4>
         <ul>
-          <li><a href="/#approach">Our Approach</a></li>
-          
-          
           <li><a href="/mentoring">Mentoring</a></li>
+          <li><a href="/workshops">Group sessions</a></li>
+          <li><a href="/organisations">For organisations</a></li>
           <li><a href="/our-story">Our Story</a></li>
           <li><a href="/blog">Blog</a></li>
           <li><a href="/contact">Contact</a></li>
@@ -226,19 +228,21 @@
       <div class="footer-links">
         <h4>Get Started</h4>
         <ul>
-          <li><a href="https://portal.ourpathguidance.co.uk/session-zero">Begin Session Zero</a></li><li><a href="https://portal.ourpathguidance.co.uk/login">Sign in to Portal</a></li>
+          <li><a href="https://portal.ourpathguidance.co.uk/session-zero">Begin Session Zero</a></li>
+          <li><a href="https://portal.ourpathguidance.co.uk/login">Sign in to Portal</a></li>
           <li><a href="/referral">Referral Form</a></li>
         </ul>
       </div>
       <div class="footer-links">
-        <h4>Connect</h4>
+        <h4>Contact</h4>
         <ul>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">LinkedIn</a></li>
-          <li><a href="#">TikTok</a></li>
-          <li><a href="/contact">Email</a></li>
+          <li><a class="email-cta-footer" data-u="hello" data-d="ourpathguidance.co.uk" href="#"><span class="email-text">hello at ourpathguidance dot co dot uk</span></a></li>
         </ul>
       </div>
+    </div>
+    <div class="footer-legal">
+      <p>OurPath is non-clinical developmental mentoring. It does not diagnose or treat any medical or mental health condition.</p>
+      <p>If you're in crisis, contact your GP, call NHS&nbsp;111 and select option&nbsp;2, or call 999 in an emergency.</p>
     </div>
     <div class="footer-bottom">
       <p>&copy; 2026 OurPath Guidance Ltd. All rights reserved.</p>
@@ -257,6 +261,11 @@ window.addEventListener('scroll',()=>{
   fc.classList.toggle('visible',window.scrollY>400&&window.innerHeight+window.scrollY<document.body.offsetHeight-400);
 });
 document.querySelectorAll('.nav-links a').forEach(l=>{l.addEventListener('click',()=>document.querySelector('.nav-links').classList.remove('open'))});
+document.querySelectorAll('.email-cta-footer').forEach(a => {
+  const addr = a.dataset.u + '@' + a.dataset.d;
+  a.href = 'mailto:' + addr;
+  a.querySelector('.email-text').textContent = addr;
+});
 
 function handleForm(e, form) {
   e.preventDefault();
@@ -266,7 +275,7 @@ function handleForm(e, form) {
       form.style.display = 'none';
       document.getElementById('contact-success').classList.add('show');
     })
-    .catch(() => { alert('Something went wrong. Please try again or email us at hello@ourpathguidance.co.uk'); });
+    .catch(() => { alert('Something went wrong. Please try again or email hello at ourpathguidance dot co dot uk'); });
   return false;
 }
 </script>

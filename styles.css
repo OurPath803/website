@@ -349,39 +349,6 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
 @media (max-width: 768px) { .reviews-grid { grid-template-columns: 1fr; } }
 
 /* ══════════════════════════════════════
-   PRICING
-   ══════════════════════════════════════ */
-.pricing-section { padding: 7rem 0; background: var(--cream); }
-.pricing-section h2 { text-align: center; margin-bottom: 1rem; font-style: italic; }
-.pricing-subtitle { text-align: center; color: var(--subtle); max-width: 580px; margin: 0 auto 3rem; }
-.pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
-.pricing-grid-4 { grid-template-columns: repeat(4, 1fr); }
-@media (min-width: 769px) and (max-width: 1024px) { .pricing-grid-4, .pricing-grid { grid-template-columns: repeat(2, 1fr) !important; } }
-@media (max-width: 768px) { .pricing-grid, .pricing-grid-4 { grid-template-columns: 1fr; } }
-.pricing-card {
-  background: var(--white); border: 1px solid var(--line); padding: 2.5rem 2rem;
-  text-align: center; transition: box-shadow .4s, transform .3s; position: relative;
-}
-.pricing-card:hover { box-shadow: 0 8px 40px rgba(0,0,0,.06); transform: translateY(-3px); }
-.pricing-card.featured { border-color: var(--gold); }
-.pricing-card.featured::before {
-  content: 'Most Popular'; position: absolute; top: -12px; left: 50%; transform: translateX(-50%);
-  background: var(--gold); color: var(--dark); font-family: var(--sans); font-size: .68rem;
-  letter-spacing: .15em; text-transform: uppercase; font-weight: 500; padding: .3rem 1.2rem;
-}
-.pricing-card .card-label { font-family: var(--sans); font-size: .7rem; letter-spacing: .2em; color: var(--gold); text-transform: uppercase; font-weight: 500; margin-bottom: 1rem; }
-.pricing-card h3 { margin-bottom: .5rem; }
-.pricing-card .price { font-family: var(--serif); font-size: 2.4rem; color: var(--dark); font-weight: 600; margin-bottom: .3rem; }
-.pricing-card .price-note { font-size: .82rem; color: var(--subtle); margin-bottom: 1.5rem; }
-.pricing-card ul { list-style: none; text-align: left; margin-bottom: 2rem; }
-.pricing-card li {
-  padding: .5rem 0; border-bottom: 1px solid var(--line); font-size: .88rem;
-  color: var(--body); display: flex; align-items: baseline; gap: .6rem;
-}
-.pricing-card li::before { content: '\2713'; color: var(--gold); font-weight: 600; font-size: .8rem; }
-@media (max-width: 768px) { .pricing-card .hero-cta { padding: 1rem 1.5rem; font-size: .85rem; } }
-
-/* ══════════════════════════════════════
    CTA BAND / INLINE CTA
    ══════════════════════════════════════ */
 .cta-band { padding: 5rem 0; background: var(--dark); text-align: center; }

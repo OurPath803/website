@@ -39,7 +39,7 @@
     <div class="page-hero-content">
       <div class="section-label">For Organisations</div>
       <div class="hero-line"></div>
-      <h1>Brought into your setting,<br>not <em>bolted on.</em></h1>
+      <h1>Brought into your setting, not bolted on.</h1>
       <p>OurPath delivers developmental mentoring programmes to mosques, colleges, student societies, schools and community organisations. Non-clinical, and scoped to the group in front of us rather than a fixed curriculum.</p>
     </div>
   </div>
@@ -87,7 +87,6 @@
   </div>
 </div>
 
-<div class="floating-cta" id="floatingCta"><div class="container"><div class="floating-cta-text"><strong>OurPath Guidance</strong> &#183; programmes for organisations</div><a href="/contact" class="hero-cta">Get in Touch &#8594;</a></div></div>
 
 <footer>
   <div class="container">
@@ -110,7 +109,7 @@
       <div class="footer-links">
         <h4>Get Started</h4>
         <ul>
-          <li><a href="https://portal.ourpathguidance.co.uk/session-zero">Begin Session Zero</a></li>
+          <li><a href="https://portal.ourpathguidance.co.uk/session-zero">Book a Free Conversation</a></li>
           <li><a href="https://portal.ourpathguidance.co.uk/login">Sign in to Portal</a></li>
           <li><a href="/referral">Referral Form</a></li>
         </ul>
@@ -129,6 +128,7 @@
     <div class="footer-bottom">
       <p>&copy; 2026 OurPath Guidance Ltd. All rights reserved.</p>
       <p>London, UK</p>
+      <p>OurPath Guidance Ltd is registered in England and Wales, company number 17109491.</p>
     </div>
   </div>
 </footer>
@@ -141,8 +141,6 @@ document.querySelectorAll('.email-cta, .email-cta-footer').forEach(a => {
 });
 window.addEventListener('scroll', () => {
   document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 60);
-  const fc = document.getElementById('floatingCta');
-  fc.classList.toggle('visible', window.scrollY > 400 && window.innerHeight + window.scrollY < document.body.offsetHeight - 400);
 });
 document.querySelectorAll('.nav-links a').forEach(l => { l.addEventListener('click', () => document.querySelector('.nav-links').classList.remove('open')) });
 </script>

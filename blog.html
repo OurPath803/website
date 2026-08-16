@@ -24,7 +24,7 @@
       <li><a href="/blog" class="active">Blog</a></li>
       <li><a href="/contact">Contact</a></li>
       <li><a href="https://portal.ourpathguidance.co.uk/login" class="nav-btn-ghost">Sign in</a></li>
-      <li><a href="https://portal.ourpathguidance.co.uk/session-zero" class="nav-btn-filled">Begin Session Zero</a></li>
+      <li><a href="https://portal.ourpathguidance.co.uk/session-zero" class="nav-btn-filled">Book a Free Conversation</a></li>
     </ul>
   </div>
 </nav>
@@ -32,7 +32,7 @@
   <div class="container"><div class="page-hero-content">
     <div class="section-label">Blog</div>
     <div class="hero-line"></div>
-    <h1>Reflections on growth,<br>clarity, and <em>development.</em></h1>
+    <h1>Reflections on growth, clarity, and development.</h1>
     <p>Writing on developmental mentoring and reflective practice, the real questions underneath a managed life.</p>
   </div></div>
 </section>
@@ -67,12 +67,6 @@
     </div>
   </div>
 </div>
-<div class="floating-cta" id="floatingCta">
-  <div class="container">
-    <div class="floating-cta-text"><strong>OurPath Guidance</strong> &#183; developmental mentoring</div>
-    <a href="https://portal.ourpathguidance.co.uk/session-zero" class="hero-cta">Book a Free Conversation &#8594;</a>
-  </div>
-</div>
 <footer>
   <div class="container">
     <div class="footer-content">
@@ -81,24 +75,22 @@
         <p>Developmental mentoring, based in Whitechapel and working across London.</p>
       </div>
       <div class="footer-links"><h4>Navigate</h4><ul><li><a href="/mentoring">Mentoring</a></li><li><a href="/workshops">Group sessions</a></li><li><a href="/organisations">For organisations</a></li><li><a href="/our-story">Our Story</a></li><li><a href="/blog">Blog</a></li><li><a href="/contact">Contact</a></li></ul></div>
-      <div class="footer-links"><h4>Get Started</h4><ul><li><a href="https://portal.ourpathguidance.co.uk/session-zero">Begin Session Zero</a></li><li><a href="https://portal.ourpathguidance.co.uk/login">Sign in to Portal</a></li><li><a href="/referral">Referral Form</a></li></ul></div>
+      <div class="footer-links"><h4>Get Started</h4><ul><li><a href="https://portal.ourpathguidance.co.uk/session-zero">Book a Free Conversation</a></li><li><a href="https://portal.ourpathguidance.co.uk/login">Sign in to Portal</a></li><li><a href="/referral">Referral Form</a></li></ul></div>
       <div class="footer-links"><h4>Contact</h4><ul><li><a class="email-cta-footer" data-u="hello" data-d="ourpathguidance.co.uk" href="#"><span class="email-text">hello at ourpathguidance dot co dot uk</span></a></li></ul></div>
     </div>
     <div class="footer-legal">
       <p>OurPath is non-clinical developmental mentoring. It does not diagnose or treat any medical or mental health condition.</p>
       <p>If you're in crisis, contact your GP, call NHS&nbsp;111 and select option&nbsp;2, or call 999 in an emergency.</p>
     </div>
-    <div class="footer-bottom"><p>&copy; 2026 OurPath Guidance Ltd. All rights reserved.</p><p>London, UK</p></div>
+    <div class="footer-bottom"><p>&copy; 2026 OurPath Guidance Ltd. All rights reserved.</p><p>London, UK</p><p>OurPath Guidance Ltd is registered in England and Wales, company number 17109491.</p></div>
   </div>
 </footer>
 <script>
 const reveals=document.querySelectorAll('.reveal');
 const observer=new IntersectionObserver(e=>{e.forEach(t=>{if(t.isIntersecting)t.target.classList.add('visible')})},{threshold:.1,rootMargin:'0px 0px -50px 0px'});
 reveals.forEach(el=>observer.observe(el));
-window.addEventListener('scroll',()=>{
-  document.getElementById('nav').classList.toggle('scrolled',window.scrollY>60);
-  const fc=document.getElementById('floatingCta');
-  fc.classList.toggle('visible',window.scrollY>400&&window.innerHeight+window.scrollY<document.body.offsetHeight-400);
+window.addEventListener('scroll', () => {
+  document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 60);
 });
 document.querySelectorAll('.nav-links a').forEach(l=>{l.addEventListener('click',()=>document.querySelector('.nav-links').classList.remove('open'))});
 document.querySelectorAll('.email-cta-footer').forEach(a => {

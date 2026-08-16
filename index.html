@@ -29,7 +29,7 @@
       <li><a href="/blog">Blog</a></li>
       <li><a href="/contact">Contact</a></li>
       <li><a href="https://portal.ourpathguidance.co.uk/login" class="nav-btn-ghost">Sign in</a></li>
-      <li><a href="https://portal.ourpathguidance.co.uk/session-zero" class="nav-btn-filled">Begin Session Zero</a></li>
+      <li><a href="https://portal.ourpathguidance.co.uk/session-zero" class="nav-btn-filled">Book a Free Conversation</a></li>
     </ul>
   </div>
 </nav>
@@ -69,7 +69,7 @@
 
     <div class="rule"></div>
     <h3>Group sessions</h3>
-    <p>Realign is a free Saturday drop-in, pay what you can. The Gift Series is a four-session series on mind, heart, soul and hands, as a full run or single sessions. <a href="/workshops" class="link-safe">Read more &#8594;</a></p>
+    <p>Realign is a Saturday drop-in, pay what you can. The Gift Series is a four-session series on mind, heart, soul and hands, as a full run or single sessions. <a href="/workshops" class="link-safe">Read more &#8594;</a></p>
 
     <div class="rule"></div>
     <h3>For organisations</h3>
@@ -127,7 +127,6 @@
   </div>
 </div>
 
-<div class="floating-cta" id="floatingCta"><div class="container"><div class="floating-cta-text"><strong>OurPath Guidance</strong> &middot; developmental mentoring</div><a href="https://portal.ourpathguidance.co.uk/session-zero" class="hero-cta">Book a Free Conversation &#8594;</a></div></div>
 
 <footer>
   <div class="container">
@@ -150,7 +149,7 @@
       <div class="footer-links">
         <h4>Get Started</h4>
         <ul>
-          <li><a href="https://portal.ourpathguidance.co.uk/session-zero">Begin Session Zero</a></li>
+          <li><a href="https://portal.ourpathguidance.co.uk/session-zero">Book a Free Conversation</a></li>
           <li><a href="https://portal.ourpathguidance.co.uk/login">Sign in to Portal</a></li>
           <li><a href="/referral">Referral Form</a></li>
         </ul>
@@ -169,6 +168,7 @@
     <div class="footer-bottom">
       <p>&copy; 2026 OurPath Guidance Ltd. All rights reserved.</p>
       <p>London, UK</p>
+      <p>OurPath Guidance Ltd is registered in England and Wales, company number 17109491.</p>
     </div>
   </div>
 </footer>
@@ -181,8 +181,6 @@ document.querySelectorAll('.email-cta, .email-cta-footer').forEach(a => {
 });
 window.addEventListener('scroll', () => {
   document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 60);
-  const fc = document.getElementById('floatingCta');
-  fc.classList.toggle('visible', window.scrollY > 600 && window.innerHeight + window.scrollY < document.body.offsetHeight - 400);
 });
 document.querySelectorAll('.nav-links a').forEach(l => { l.addEventListener('click', () => document.querySelector('.nav-links').classList.remove('open')) });
 </script>

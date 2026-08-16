@@ -583,9 +583,10 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
    PROSE SECTIONS — pricing, who this is for,
    what happens. Plain text, no cards.
    ══════════════════════════════════════ */
-.prose-section { padding: 5rem 0; }
+.prose-section { padding: 4rem 0; }
 .prose-section.bordered { border-top: 1px solid var(--line); }
-.prose-section .container { max-width: 680px; }
+.prose-section .container { max-width: 960px; }
+.prose-section p { max-width: 720px; }
 .prose-section h2 { font-style: italic; margin-bottom: 1.75rem; }
 .prose-section p { font-size: 1.05rem; line-height: 1.8; color: var(--body); margin-bottom: 1.4rem; }
 .prose-section p:last-child { margin-bottom: 0; }

@@ -1,72 +1,43 @@
+# Static site: no build step. Publish the repository root as-is.
 [build]
   publish = "."
-  command = "node scripts/build-blog.js"
 
-# Pretty URLs — serve .html files without extension
-[[redirects]]
-  from = "/workshops"
-  to = "/workshops.html"
-  status = 200
-
-[[redirects]]
-  from = "/journal"
-  to = "https://portal.ourpathguidance.co.uk/login"
-  status = 302
-
-[[redirects]]
-  from = "/journal.html"
-  to = "https://portal.ourpathguidance.co.uk/login"
-  status = 302
-
-[[redirects]]
-  from = "/book"
-  to = "https://portal.ourpathguidance.co.uk/session-zero"
-  status = 302
-
-[[redirects]]
-  from = "/book.html"
-  to = "https://portal.ourpathguidance.co.uk/session-zero"
-  status = 302
-
-[[redirects]]
-  from = "/mentoring"
-  to = "/mentoring.html"
-  status = 200
-
-[[redirects]]
-  from = "/organisations"
-  to = "/organisations.html"
-  status = 200
-
-[[redirects]]
-  from = "/referral"
-  to = "/referral.html"
-  status = 200
-
-[[redirects]]
-  from = "/blog/*"
-  to = "/blog/:splat.html"
-  status = 200
-
-[[redirects]]
-  from = "/blog"
-  to = "/blog.html"
-  status = 200
-
-[[redirects]]
-  from = "/contact"
-  to = "/contact.html"
-  status = 200
-
-[[redirects]]
-  from = "/our-story"
-  to = "/our-story.html"
-  status = 200
-
-# Headers
 [[headers]]
   for = "/*"
   [headers.values]
     X-Frame-Options = "SAMEORIGIN"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=(), interest-cohort=()"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+    Content-Security-Policy = "default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self'; form-action 'self'; frame-ancestors 'self'; base-uri 'self'; object-src 'none'"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/styles.css"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/main.js"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/*.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/*.svg"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"

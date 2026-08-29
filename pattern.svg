@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+<defs>
+<pattern id="khatam" width="60" height="60" patternUnits="userSpaceOnUse">
+<g fill="none" stroke="#C9A84C" stroke-width="0.8" opacity="0.5">
+<path d="M30 6l6.5 11.5L49 12l-5.5 12.5L56 30l-12.5 5.5L49 48l-12.5-5.5L30 54l-6.5-11.5L11 48l5.5-12.5L4 30l12.5-5.5L11 12l12.5 5.5z"/>
+<circle cx="30" cy="30" r="9"/>
+</g>
+</pattern>
+</defs>
+<rect width="120" height="120" fill="url(#khatam)"/>
+</svg>
